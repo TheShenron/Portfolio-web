@@ -1,3 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body{
+    cursor: url('../custom-cursor.png') , auto;
+    background-color: #171723;
+    position: relative;
+}
+
+
+#curser{
+    position: absolute;
+     width: 30px;
+     height: 30px;
+     border-radius: 50%;
+     border: 2px solid #eee;
+     left: 0;
+     transform: translate(-50% , -50%);
+     pointer-events: none;
+}
+
+#curser.large{
+    width: 40px;
+    height: 40px;    
+}
+
+
+/* header css start hare --------START */
+
+
+header {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    color: #02ffa0;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px;
+}
+
+nav > div:nth-child(1){
+    transform: scale(1.4);
+    padding: 5px 10px;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    font-family: 'Bad Script', cursive;
+    transition: all .2s cubic-bezier(.13,1.41,.39,1.17);
+}
+
+nav > div:nth-child(1):hover{
+    transform: scale(1.5);
+}
+
+
+nav > div:nth-child(1)::after{
+    content: "/>";
+    display: block;
+    position: relative;
+    left: 5px;
+    color: white;
+    border-radius: 50%;
+}
+
+nav > div:nth-child(1)::before{
+    content: "<";
+    display: block;
+    position: relative;
+    bottom: 3px;
+    color: white;
+    left: -5px;
+}
+
+
+nav > div:nth-child(2) > ul > li{
+    display: inline-block;
+    font-size: 17px;
+    margin:0 3px;
+    padding: 5px 10px;
+    /* cursor: pointer; */
+}
+
+
+nav > div:nth-child(2) > ul > li::after{
+    content: "";
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 0;
+    top: 4px;
+    transition: all .2s cubic-bezier(.13,1.41,.39,1.17);
+}
+
+
+nav > div:nth-child(2) > ul > li:hover{
+   color: white;
+}
+
+
+nav > div:nth-child(2) > ul > li:hover::after{
+    background-color: #F7F7F7;
+    width: 100%;
+}
+
+
+/* header css end haer */
+
+
+
+/* html tegs icon css end hare --------START*/
+
+
 .p_start , .p_end {
     position: relative;
 }
@@ -36,17 +157,24 @@
 
 .scrollText{
     position: absolute;
-    right: 0;
-    bottom: 60px;
+    right: -50px;
+    bottom: 50px;
     transform: rotate(90deg);
+    color: #00ff9d;
 }
 
 
+/* html tegs css end hare */
+
+
+
+/* hero image content css hare ---- START  */
 
 .titleDiv{
     width: 90%;
     margin:auto;
     padding: 3rem 0 0 0;
+    position: relative;
 }
 
 .title{
@@ -98,3 +226,77 @@
     width: 100%;
     z-index: -1;
 }
+
+
+/* hero image content css hare  */
+
+
+
+/* about me css start hare */
+.aboutme{
+    width: 90%;
+    margin: 100px auto 0 auto;
+    position: relative;
+}
+
+
+.aboutme_title > h1 {
+    padding: 20px 0;
+    color: #00ff9d;
+    font-size: 4rem;
+}
+
+.aboutmepara{
+    width: 90%;
+    margin: 10px auto 0 auto;
+    /* border: 1px solid red; */
+    position: relative;
+}
+
+.aboutme_detail > div  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutme_detail > div > div:nth-child(1)  {
+    width: 30%;
+    text-align: center;
+    /* border: 1px solid red; */
+
+}
+
+.aboutme_detail > div > div:nth-child(1) > img {
+    width: 250px;
+    border-radius: 50%;
+    height: 250px;
+    object-fit: cover;
+    object-position: 0 -60px;
+    outline: 3px solid #00ff9d;
+}
+
+.aboutme_detail > div > div:nth-child(2)  {
+    width: 70%;
+    /* border: 1px solid red; */
+}
+
+.aboutme_detail > div > div > p {
+    padding: 5px 0;
+    color: rgb(228, 218, 218);
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+
+.underline{
+    position: relative;
+    color: #00ff9d;
+}
+
+
+
+
+
+/* about me css end hare */
+
+
+
