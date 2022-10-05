@@ -87,6 +87,7 @@
     background: none;
     border: 2px solid #f79e04;
     color: #f79e04;
+    pointer-events: none;
 }
 
 .subtitle_btn:hover > button{
