@@ -1,0 +1,19 @@
+body{
+    cursor: url('../custom-cursor.png') , auto;
+}
+
+#curser{
+    position: fixed;
+     width: 30px;
+     height: 30px;
+     border-radius: 50%;
+     border: 2px solid #eee;
+     left: 0;
+     transform: translate(-50% , -50%);
+     pointer-events: none;
+}
+
+#curser.large{
+    width: 40px;
+    height: 40px;    
+}
