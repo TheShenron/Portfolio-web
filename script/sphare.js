@@ -6,6 +6,8 @@ const Texts = [
     'EXPRESS-JS', 'GIT/GITHUB', 'JQUERY', 'HEROKU', "AWS"
 ];
 
+console.log(innerWidth)
+
 var tagCloud = TagCloud('.Sphere', Texts, {
 
     // Sphere radius in px
