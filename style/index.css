@@ -8,6 +8,12 @@
     font-family: 'Josefin Sans', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+
+
 body{
     cursor: url('../custom-cursor.png') , auto;
     background-color: #171723;
