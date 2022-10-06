@@ -425,11 +425,10 @@ nav > div:nth-child(2) > ul > li:hover::after{
     width: 90%;
     margin: auto;
     margin-top: 100px;
-
 }
 
 
-.contact_me > div > div > h1{
+.contact_title > h1{
     font-size: 3rem;
     color: #00ff9d;
     padding: 20px 0;
@@ -438,10 +437,58 @@ nav > div:nth-child(2) > ul > li:hover::after{
 
 .contact_form{
     margin-top: 50px;
+    /* border: 1px solid red; */
+}
+
+.contact_form_main{
+    /* border: 1px solid red; */
+    display: flex;
+}
+
+.contact_form_main > div{
+    width: 50%;
+    /* border: 1px solid red; */
 }
 
 .contact_form > form{
-    margin-top: 50px;
+    padding: 20px 20px;
+}
+
+.contact_form > form > div{
+    padding: 5px 0;
+}
+
+
+.contact_form > form input{
+    padding: 20px 10px;
+    width: 100%;
+    font-size: 1rem;
+    background-color: #2b2b30;
+    border: none;
+    color: #00ff9d;
+}
+
+.contact_form > form input:focus{
+    outline: none;
+}
+
+.form_flex{
+    display: flex;
+    gap: 10px;
+}
+
+.contact_form > form textarea{
+    padding: 20px 10px;
+    width: 100%;
+    font-size: 1rem;
+    background-color: #2b2b30;
+    border: none;
+    color: #00ff9d;
+    line-height: 1.2rem;
+}
+
+.contact_form > form textarea:focus{
+    outline: none;
 }
 
 /* contact css end hare  */
