@@ -292,11 +292,157 @@ nav > div:nth-child(2) > ul > li:hover::after{
     color: #00ff9d;
 }
 
-
-
-
-
 /* about me css end hare */
 
 
+
+
+/* skills css start hare -----START */
+.skills{
+    width: 90%;
+    margin: 100px auto 0 auto;
+}
+
+.skills > div{
+    display: flex;
+}
+
+.skills > div > div:nth-child(1){
+    width: 50%;
+}
+
+.skills > div > div:nth-child(1) > div > h1{
+    padding: 20px 0;
+    font-size: 4rem;
+    color: #00ff9d;
+}
+
+.skills > div > div:nth-child(2){
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+
+.skills > div > div:nth-child(2) > div{
+    width: min-content ;
+    margin: auto;
+}
+
+.skills_tack > h3{
+    padding: 20px 0;
+    font-size: 1.5rem;
+    margin-top: 50px;
+    color: whitesmoke;
+}
+
+
+.skills_para{
+    margin-top: 50px;
+    font-size: 1.3rem;
+    color: whitesmoke;
+    padding: 20px 0;
+    line-height: 1.5rem;
+}
+/* skills css end*/
+
+
+
+/* projects css start hare  */
+
+.projects{
+    width: 90%;
+    margin: 100px auto 0 auto ;
+}
+
+.projects > div:nth-child(1) > div > h1{
+    font-size: 3rem;
+    padding: 20px 0;
+    color: #00ff9d;
+}
+
+
+.projects > div:nth-child(2){
+    margin-top: 50px;
+}
+
+.projects > div:nth-child(2) > div {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    gap: 5px;
+}
+
+.projects > div:nth-child(2) > div > div {
+    width: 24%;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+    flex-grow: 1;
+}
+
+
+.projects > div:nth-child(2) > div > div:hover img {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.projects > div:nth-child(2) > div > div:hover span {
+    transform: scale(1);
+}
+
+.projects > div:nth-child(2) > div > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: .7;
+    transition: all 200ms;
+}
+
+
+.projects > div:nth-child(2) > div > div > span {
+    position: absolute;
+    left: calc(50% - 50px);
+    top: calc(50% - 50px);
+    width: 100px;
+    height: 100px;
+    background-color: #02ffa0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0);
+    transition: all 200ms ;
+    text-align: center;
+}
+
+/* projects css ends hare  */
+
+
+
+/* contact css start hare  */
+
+.contact_me{
+    width: 90%;
+    margin: auto;
+    margin-top: 100px;
+
+}
+
+
+.contact_me > div > div > h1{
+    font-size: 3rem;
+    color: #00ff9d;
+    padding: 20px 0;
+}
+
+
+.contact_form{
+    margin-top: 50px;
+}
+
+.contact_form > form{
+    margin-top: 50px;
+}
+
+/* contact css end hare  */
 
