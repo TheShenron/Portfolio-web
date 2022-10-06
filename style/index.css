@@ -12,6 +12,14 @@ html {
     scroll-behavior: smooth;
 }
 
+.bubble{
+    position: absolute;
+    background-color: #FFC052;
+    border: 2px solid #f39e0b;
+    border-radius: 50%;
+    z-index: -1;
+}
+
 
 
 body{
@@ -233,7 +241,7 @@ nav > div:nth-child(2) > ul > li:hover::after{
 
 .title > h1 > span{
 
-    text-shadow: -0.06em 0 #f79e04,  0.06em 0 #00ff9d;
+    text-shadow: -0.06em 0 #FFC052,  0.06em 0 #00ff9d;
 }
 
 .subtitle{
@@ -252,7 +260,7 @@ nav > div:nth-child(2) > ul > li:hover::after{
     left: 0;
     width:0;
     height: 100%;
-    background-color: #f79e04;
+    background-color: #FFC052;
     clip-path: polygon(0 0, 100% 0, 80% 100%, 0 100%);
     transition: width .3s ;
 }
@@ -261,13 +269,13 @@ nav > div:nth-child(2) > ul > li:hover::after{
     padding: 15px 50px;
     font-size: 1rem;
     background: none;
-    border: 2px solid #f79e04;
-    color: #f79e04;
+    border: 2px solid #FFC052;
+    color: #FFC052;
     pointer-events: none;
 }
 
 .subtitle_btn:hover > button{
-    color: white;
+    color: black;
 }
 
 .subtitle_btn:hover span{
@@ -320,7 +328,8 @@ nav > div:nth-child(2) > ul > li:hover::after{
     height: 250px;
     object-fit: cover;
     object-position: 0 -60px;
-    outline: 3px solid #00ff9d;
+    outline: 3px solid white;
+    box-shadow: 0 0 5px white , 0 0 10px white , 0 0 15px white ;
 }
 
 .aboutme_detail > div > div:nth-child(2)  {
@@ -485,24 +494,27 @@ nav > div:nth-child(2) > ul > li:hover::after{
 
 .contact_form{
     margin-top: 50px;
-    /* border: 1px solid red; */
 }
 
 .contact_form_main{
-    /* border: 1px solid red; */
     display: flex;
 }
 
 .contact_form_main > div{
     width: 50%;
-    /* border: 1px solid red; */
 }
 
 .contact_form_main > div:nth-child(2){
     width: 50%;
-    outline: 2px solid #00ff9d;
+    outline: 2px solid #f39e0b;
+    overflow: hidden;
+    height: 650px;
 }
 
+.contact_form_main > div:nth-child(2) > div > img{
+    width: 100%;
+}
+ 
 .contact_form > form{
     padding: 20px 20px;
 }

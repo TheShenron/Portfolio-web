@@ -13,7 +13,7 @@ var tagCloud = TagCloud('.Sphere', Texts, {
 
     // animation speed
     // slow, normal, fast
-    maxSpeed: 'normal',
+    maxSpeed: 'fast',
     initSpeed: 'fast',
 
     // Rolling direction [0 (top) , 90 (left), 135 (right-bottom)] 
@@ -25,5 +25,5 @@ var tagCloud = TagCloud('.Sphere', Texts, {
 });
 
 // Giving color to each text in sphere
-var color = '#00ff9d';
+var color = '#FFC052';
 document.querySelector('.Sphere').style.color = color;
