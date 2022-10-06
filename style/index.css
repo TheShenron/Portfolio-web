@@ -47,6 +47,7 @@ nav{
     padding: 10px 100px;
 }
 
+
 nav > div:nth-child(1){
     transform: scale(1.4);
     padding: 5px 10px;
@@ -155,12 +156,49 @@ nav > div:nth-child(2) > ul > li:hover::after{
     bottom: 0;
 }
 
+@keyframes scrolltext {
+    from {
+        bottom: 100px;
+    }
+
+    to{
+        bottom: 130px;
+    }
+}
+
+
+
 .scrollText{
     position: absolute;
     right: -50px;
-    bottom: 50px;
+    bottom: 100px;
     transform: rotate(90deg);
     color: #00ff9d;
+    animation: scrolltext cubic-bezier(0.215, 0.610, 0.355, 1) 400ms infinite alternate;
+}
+
+
+.scroll_to_top{
+    width: 60px;
+    height: 60px;
+    border: 1px solid #00ff9d;
+    position: fixed;
+    top: 80vh;
+    right: 100px;
+    border-radius: 50%;
+    color: #00ff9d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0000009f;
+    z-index: 1;
+    box-shadow: 0px 0px 5px #00ff9d, 0px 0px 10px #00ff9d;
+    transition: all 100ms;
+}
+
+.scroll_to_top:hover{
+    box-shadow: 0px 0px 5px #00ff9d, 0px 0px 10px #00ff9d , 0px 0px 20px #00ff9d ;
+    transform: scale(1.1);
 }
 
 
@@ -172,14 +210,19 @@ nav > div:nth-child(2) > ul > li:hover::after{
 
 .titleDiv{
     width: 90%;
+    height: 90vh;
     margin:auto;
-    padding: 3rem 0 0 0;
+    /* padding: 3rem 0 0 0; */
     position: relative;
+
+    display: flex;
+    align-items: center;
 }
 
 .title{
     font-size: 3rem;
     color: white;
+    padding: 30px 0;
 }
 
 .title > h1 > span{
@@ -189,12 +232,11 @@ nav > div:nth-child(2) > ul > li:hover::after{
 
 .subtitle{
     font-size: 1.3rem;
-    margin: 15px 0;
     color: rgb(156, 156, 156);
 }
 
 .subtitle_btn{
-    margin: 30px 0;
+    margin: 40px 0;
     position: relative;
     width: max-content;
 }
@@ -235,7 +277,7 @@ nav > div:nth-child(2) > ul > li:hover::after{
 /* about me css start hare */
 .aboutme{
     width: 90%;
-    margin: 100px auto 0 auto;
+    margin: 150px auto 50px auto;
     position: relative;
 }
 
@@ -248,7 +290,7 @@ nav > div:nth-child(2) > ul > li:hover::after{
 
 .aboutmepara{
     width: 90%;
-    margin: 10px auto 0 auto;
+    margin: 10px auto 100px auto;
     /* border: 1px solid red; */
     position: relative;
 }
@@ -300,7 +342,7 @@ nav > div:nth-child(2) > ul > li:hover::after{
 /* skills css start hare -----START */
 .skills{
     width: 90%;
-    margin: 100px auto 0 auto;
+    margin: 150px auto;
 }
 
 .skills > div{
@@ -351,7 +393,7 @@ nav > div:nth-child(2) > ul > li:hover::after{
 
 .projects{
     width: 90%;
-    margin: 100px auto 0 auto ;
+    margin: 150px auto ;
 }
 
 .projects > div:nth-child(1) > div > h1{
@@ -448,6 +490,11 @@ nav > div:nth-child(2) > ul > li:hover::after{
 .contact_form_main > div{
     width: 50%;
     /* border: 1px solid red; */
+}
+
+.contact_form_main > div:nth-child(2){
+    width: 50%;
+    outline: 2px solid #00ff9d;
 }
 
 .contact_form > form{
