@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -12,7 +12,7 @@ html {
     scroll-behavior: smooth;
 }
 
-.bubble{
+.bubble {
     position: absolute;
     background-color: #FFC052;
     border: 2px solid #f39e0b;
@@ -22,27 +22,33 @@ html {
 
 
 
-body{
-    cursor: url('../custom-cursor.png') , auto;
+body {
+    cursor: url('../img/custom-cursor.png'), auto;
     background-color: #171723;
     position: relative;
 }
 
 
-#curser{
+#curser {
     position: absolute;
-     width: 30px;
-     height: 30px;
-     border-radius: 50%;
-     border: 2px solid #eee;
-     left: 0;
-     transform: translate(-50% , -50%);
-     pointer-events: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #eee;
+    left: 0;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
 }
 
-#curser.large{
+#curser.large {
     width: 40px;
-    height: 40px;    
+    height: 40px;
+}
+
+@media only screen and (max-width: 700px) {
+    #curser {
+        display: none;
+    }
 }
 
 
@@ -54,7 +60,7 @@ header {
     color: #02ffa0;
 }
 
-nav{
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -62,22 +68,23 @@ nav{
 }
 
 
-nav > div:nth-child(1){
+
+nav>div:nth-child(1) {
     transform: scale(1.4);
     padding: 5px 10px;
     font-weight: bolder;
     display: flex;
     align-items: center;
     font-family: 'Bad Script', cursive;
-    transition: all .2s cubic-bezier(.13,1.41,.39,1.17);
+    transition: all .2s cubic-bezier(.13, 1.41, .39, 1.17);
 }
 
-nav > div:nth-child(1):hover{
+nav>div:nth-child(1):hover {
     transform: scale(1.5);
 }
 
 
-nav > div:nth-child(1)::after{
+nav>div:nth-child(1)::after {
     content: "/>";
     display: block;
     position: relative;
@@ -86,7 +93,7 @@ nav > div:nth-child(1)::after{
     border-radius: 50%;
 }
 
-nav > div:nth-child(1)::before{
+nav>div:nth-child(1)::before {
     content: "<";
     display: block;
     position: relative;
@@ -96,35 +103,80 @@ nav > div:nth-child(1)::before{
 }
 
 
-nav > div:nth-child(2) > ul > li{
+nav>div:nth-child(2)>ul>li {
     display: inline-block;
     font-size: 17px;
-    margin:0 3px;
+    margin: 0 3px;
     padding: 5px 10px;
     /* cursor: pointer; */
 }
 
 
-nav > div:nth-child(2) > ul > li::after{
+nav>div:nth-child(2)>ul>li::after {
     content: "";
     display: block;
     height: 2px;
     position: relative;
     width: 0;
     top: 4px;
-    transition: all .2s cubic-bezier(.13,1.41,.39,1.17);
+    transition: all .2s cubic-bezier(.13, 1.41, .39, 1.17);
 }
 
 
-nav > div:nth-child(2) > ul > li:hover{
-   color: white;
+nav>div:nth-child(2)>ul>li:hover {
+    color: white;
 }
 
 
-nav > div:nth-child(2) > ul > li:hover::after{
+nav>div:nth-child(2)>ul>li:hover::after {
     background-color: #F7F7F7;
     width: 100%;
 }
+
+/* ----------- meida Query -------------------- */
+
+@media only screen and (max-width: 850px) {
+    nav {
+        padding: 10px 0;
+    }
+
+    nav>div:nth-child(1) {
+        transform: scale(1.1);
+        padding: 5px 30px;
+    }
+    
+    nav>div:nth-child(1):hover {
+        transform: scale(1.2);
+    }
+
+    nav>div:nth-child(2)>ul {
+        display: none;
+    }
+
+    nav>div:nth-child(2)> div{
+        padding: 0 20px;
+    }
+
+    nav>div:nth-child(2)> div > span{
+        display: block;
+        width: 30px;
+        height: 4px;
+        background-color: #00ff9d;
+        margin: 4px 0;
+    }
+}
+
+@media only screen and (min-width: 851px) and   (max-width : 1000px) {
+    nav {
+        padding: 10px 50px;
+    }
+
+    nav>div:nth-child(2)> div{
+        display: none;
+    }
+
+}
+
 
 
 /* header css end haer */
@@ -134,39 +186,43 @@ nav > div:nth-child(2) > ul > li:hover::after{
 /* html tegs icon css end hare --------START*/
 
 
-.p_start , .p_end {
+.p_start,
+.p_end {
     position: relative;
 }
 
 
-.start , .end {
-    font-size: 1rem ;
+.start,
+.end {
+    font-size: 1rem;
     position: absolute;
     font-style: italic;
     color: gray;
 }
 
-.start::after{
+.start::after {
     content: " >";
 }
-.start::before{
+
+.start::before {
     content: "< ";
 }
 
-.end::after{
+.end::after {
     content: " >";
 }
-.end::before{
+
+.end::before {
     content: "< / ";
 }
 
 
-.start{
+.start {
     top: 0;
     left: 0;
 }
 
-.end{
+.end {
     bottom: 0;
 }
 
@@ -175,14 +231,14 @@ nav > div:nth-child(2) > ul > li:hover::after{
         bottom: 100px;
     }
 
-    to{
+    to {
         bottom: 130px;
     }
 }
 
 
 
-.scrollText{
+.scrollText {
     position: absolute;
     right: -50px;
     bottom: 100px;
@@ -192,7 +248,7 @@ nav > div:nth-child(2) > ul > li:hover::after{
 }
 
 
-.scroll_to_top{
+.scroll_to_top {
     width: 60px;
     height: 60px;
     border: 1px solid #00ff9d;
@@ -206,13 +262,22 @@ nav > div:nth-child(2) > ul > li:hover::after{
     align-items: center;
     background-color: #0000009f;
     z-index: 1;
-    box-shadow: 0px 0px 5px #00ff9d, 0px 0px 10px #00ff9d;
+    box-shadow: 0px 0px 5px #00ff9d;
     transition: all 100ms;
 }
 
-.scroll_to_top:hover{
-    box-shadow: 0px 0px 5px #00ff9d, 0px 0px 10px #00ff9d , 0px 0px 20px #00ff9d ;
+.scroll_to_top:hover {
     transform: scale(1.1);
+}
+
+@media only screen and (max-width: 850px) {
+    .scroll_to_top {
+        width: 50px;
+        height: 50px;
+        right: 50px;
+        top: 85vh;
+    }
+
 }
 
 
@@ -222,10 +287,10 @@ nav > div:nth-child(2) > ul > li:hover::after{
 
 /* hero image content css hare ---- START  */
 
-.titleDiv{
+.titleDiv {
     width: 90%;
     height: 90vh;
-    margin:auto;
+    margin: auto;
     /* padding: 3rem 0 0 0; */
     position: relative;
 
@@ -233,39 +298,39 @@ nav > div:nth-child(2) > ul > li:hover::after{
     align-items: center;
 }
 
-.title{
+.title {
     font-size: 3rem;
     color: white;
     padding: 30px 0;
 }
 
-.title > h1 > span{
+.title>h1>span {
 
-    text-shadow: -0.06em 0 #FFC052,  0.06em 0 #00ff9d;
+    text-shadow: -0.06em 0 #FFC052, 0.06em 0 #00ff9d;
 }
 
-.subtitle{
+.subtitle {
     font-size: 1.3rem;
     color: rgb(156, 156, 156);
 }
 
-.subtitle_btn{
+.subtitle_btn {
     margin: 40px 0;
     position: relative;
     width: max-content;
 }
 
-.subtitle_btn > span{
+.subtitle_btn>span {
     position: absolute;
     left: 0;
-    width:0;
+    width: 0;
     height: 100%;
     background-color: #FFC052;
     clip-path: polygon(0 0, 100% 0, 80% 100%, 0 100%);
-    transition: width .3s ;
+    transition: width .3s;
 }
 
-.subtitle_btn > button{
+.subtitle_btn>button {
     padding: 15px 50px;
     font-size: 1rem;
     background: none;
@@ -274,14 +339,40 @@ nav > div:nth-child(2) > ul > li:hover::after{
     pointer-events: none;
 }
 
-.subtitle_btn:hover > button{
+.subtitle_btn:hover>button {
     color: black;
 }
 
-.subtitle_btn:hover span{
+.subtitle_btn:hover span {
     width: 100%;
     z-index: -1;
 }
+
+
+/* ----------- meida Query -------------------- */
+
+@media only screen and (max-width: 850px) {
+    .title {
+        font-size: 2.2rem;
+        color: white;
+        padding: 30px 0;
+    }
+
+    .subtitle_btn>button {
+        padding: 15px 30px;
+        font-size: 1.1rem;
+    }
+
+    .titleDiv {
+        /* padding: 3rem 0 0 0; */
+        margin-top: 20px;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    
+}
+
 
 
 /* hero image content css hare  */
@@ -289,65 +380,112 @@ nav > div:nth-child(2) > ul > li:hover::after{
 
 
 /* about me css start hare */
-.aboutme{
+.aboutme {
     width: 90%;
     margin: 150px auto 50px auto;
     position: relative;
 }
 
 
-.aboutme_title > h1 {
+.aboutme_title>h1 {
     padding: 20px 0;
     color: #00ff9d;
     font-size: 4rem;
 }
 
-.aboutmepara{
+.aboutmepara {
     width: 90%;
     margin: 10px auto 100px auto;
     /* border: 1px solid red; */
     position: relative;
 }
 
-.aboutme_detail > div  {
+.aboutme_detail>div {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.aboutme_detail > div > div:nth-child(1)  {
+.aboutme_detail>div>div:nth-child(1) {
     width: 30%;
     text-align: center;
-    /* border: 1px solid red; */
-
 }
 
-.aboutme_detail > div > div:nth-child(1) > img {
+.aboutme_detail>div>div:nth-child(1)>img {
     width: 250px;
     border-radius: 50%;
     height: 250px;
     object-fit: cover;
     object-position: 0 -60px;
-    outline: 3px solid white;
-    box-shadow: 0 0 5px white , 0 0 10px white , 0 0 15px white ;
+    outline: 3px solid #00ff9d;
 }
 
-.aboutme_detail > div > div:nth-child(2)  {
+.aboutme_detail>div>div:nth-child(2) {
     width: 70%;
-    /* border: 1px solid red; */
 }
 
-.aboutme_detail > div > div > p {
+.aboutme_detail>div>div>p {
     padding: 5px 0;
     color: rgb(228, 218, 218);
     font-size: 1.2rem;
     line-height: 1.5rem;
 }
 
-.underline{
+.underline {
     position: relative;
     color: #00ff9d;
 }
+
+
+
+
+@media only screen and (max-width: 850px) {
+    .aboutme {
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .aboutme_title>h1 {
+        padding: 20px 0;
+        color: #00ff9d;
+        font-size: 3rem;
+    }
+
+    .aboutmepara {
+        margin: 30px auto;
+    }
+
+    .aboutme_detail>div {
+        flex-direction: column;
+    }
+
+    .aboutme_detail>div>div:nth-child(1) {
+        width: 90%;
+        margin: 30px 0;    
+    }
+
+    .aboutme_detail>div>div:nth-child(1)>img {
+        width: 200px;
+        height: 200px;
+        object-position: 0 -50px;
+        box-shadow: none;
+    }
+
+    .aboutme_detail>div>div:nth-child(2) {
+        width: 95%;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (min-width: 851px) and   (max-width : 1000px) {
+    .aboutme_detail>div>div:nth-child(1)>img {
+        width: 200px;
+        height: 200px;
+        object-position: 0 -50px;
+        box-shadow: none;
+    }
+}
+
 
 /* about me css end hare */
 
@@ -355,37 +493,37 @@ nav > div:nth-child(2) > ul > li:hover::after{
 
 
 /* skills css start hare -----START */
-.skills{
+.skills {
     width: 90%;
     margin: 150px auto;
 }
 
-.skills > div{
+.skills>div {
     display: flex;
 }
 
-.skills > div > div:nth-child(1){
+.skills>div>div:nth-child(1) {
     width: 50%;
 }
 
-.skills > div > div:nth-child(1) > div > h1{
+.skills>div>div:nth-child(1)>div>h1 {
     padding: 20px 0;
     font-size: 4rem;
     color: #00ff9d;
 }
 
-.skills > div > div:nth-child(2){
+.skills>div>div:nth-child(2) {
     width: 50%;
     text-align: center;
     margin: auto;
 }
 
-.skills > div > div:nth-child(2) > div{
-    width: min-content ;
+.skills>div>div:nth-child(2)>div {
+    width: min-content;
     margin: auto;
 }
 
-.skills_tack > h3{
+.skills_tack>h3 {
     padding: 20px 0;
     font-size: 1.5rem;
     margin-top: 50px;
@@ -393,43 +531,91 @@ nav > div:nth-child(2) > ul > li:hover::after{
 }
 
 
-.skills_para{
+.skills_para {
     margin-top: 50px;
     font-size: 1.3rem;
     color: whitesmoke;
     padding: 20px 0;
     line-height: 1.5rem;
 }
+
+
+
+@media only screen and (max-width: 850px) {
+    .skills {
+        margin: 150px auto;
+    }
+
+    .skills>div {
+        flex-direction: column;
+    }
+    
+    .skills>div>div:nth-child(1) {
+        width: 100%;
+    }
+    
+    .skills>div>div:nth-child(1)>div>h1 {
+        font-size: 3rem;
+    }
+    
+    .skills>div>div:nth-child(2) {
+        width: 100%;
+    }
+    
+    .skills>div>div:nth-child(2)>div {
+        width: min-content;
+        margin: auto;
+    }
+    
+    .skills_tack>h3 {
+        padding: 20px 0;
+        font-size: 1.5rem;
+        margin-top: 50px;
+        color: whitesmoke;
+    }
+    
+    
+    .skills_para {
+        margin-top: 50px;
+        font-size: 1.3rem;
+        color: whitesmoke;
+        padding: 20px 0;
+        line-height: 1.5rem;
+    }
+}
+
+@media only screen and (min-width: 851px) and   (max-width : 1000px) {}
+
 /* skills css end*/
 
 
 
 /* projects css start hare  */
 
-.projects{
+.projects {
     width: 90%;
-    margin: 150px auto ;
+    margin: 150px auto;
 }
 
-.projects > div:nth-child(1) > div > h1{
+.projects>div:nth-child(1)>div>h1 {
     font-size: 3rem;
     padding: 20px 0;
     color: #00ff9d;
 }
 
 
-.projects > div:nth-child(2){
+.projects>div:nth-child(2) {
     margin-top: 50px;
 }
 
-.projects > div:nth-child(2) > div {
+.projects>div:nth-child(2)>div {
     display: flex;
     flex-wrap: wrap;
     padding: 20px 0;
     gap: 5px;
 }
 
-.projects > div:nth-child(2) > div > div {
+.projects>div:nth-child(2)>div>div {
     width: 24%;
     height: 250px;
     position: relative;
@@ -438,16 +624,16 @@ nav > div:nth-child(2) > ul > li:hover::after{
 }
 
 
-.projects > div:nth-child(2) > div > div:hover img {
+.projects>div:nth-child(2)>div>div:hover img {
     transform: scale(1.1);
     opacity: 1;
 }
 
-.projects > div:nth-child(2) > div > div:hover span {
+.projects>div:nth-child(2)>div>div:hover span {
     transform: scale(1);
 }
 
-.projects > div:nth-child(2) > div > div > img {
+.projects>div:nth-child(2)>div>div>img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -456,7 +642,7 @@ nav > div:nth-child(2) > ul > li:hover::after{
 }
 
 
-.projects > div:nth-child(2) > div > div > span {
+.projects>div:nth-child(2)>div>div>span {
     position: absolute;
     left: calc(50% - 50px);
     top: calc(50% - 50px);
@@ -468,9 +654,29 @@ nav > div:nth-child(2) > ul > li:hover::after{
     align-items: center;
     justify-content: center;
     transform: scale(0);
-    transition: all 200ms ;
+    transition: all 200ms;
     text-align: center;
 }
+
+
+
+
+@media only screen and (max-width: 850px) {
+    .projects {
+        margin: 100px auto;
+    }
+
+    .projects>div:nth-child(2)>div {
+        gap: 10px;
+    }
+    
+    .projects>div:nth-child(2)>div>div {
+        width: 90%;
+        border: 1px solid #f39e0b;
+    }
+}
+
+@media only screen and (min-width: 851px) and   (max-width : 1000px) {}
 
 /* projects css ends hare  */
 
@@ -478,53 +684,53 @@ nav > div:nth-child(2) > ul > li:hover::after{
 
 /* contact css start hare  */
 
-.contact_me{
+.contact_me {
     width: 90%;
     margin: auto;
     margin-top: 100px;
 }
 
 
-.contact_title > h1{
+.contact_title>h1 {
     font-size: 3rem;
     color: #00ff9d;
     padding: 20px 0;
 }
 
 
-.contact_form{
+.contact_form {
     margin-top: 50px;
 }
 
-.contact_form_main{
+.contact_form_main {
     display: flex;
 }
 
-.contact_form_main > div{
+.contact_form_main>div {
     width: 50%;
 }
 
-.contact_form_main > div:nth-child(2){
+.contact_form_main>div:nth-child(2) {
     width: 50%;
     outline: 2px solid #f39e0b;
     overflow: hidden;
     height: 650px;
 }
 
-.contact_form_main > div:nth-child(2) > div > img{
+.contact_form_main>div:nth-child(2)>div>img {
     width: 100%;
 }
- 
-.contact_form > form{
+
+.contact_form>form {
     padding: 20px 20px;
 }
 
-.contact_form > form > div{
+.contact_form>form>div {
     padding: 5px 0;
 }
 
 
-.contact_form > form input{
+.contact_form>form input {
     padding: 20px 10px;
     width: 100%;
     font-size: 1rem;
@@ -533,16 +739,16 @@ nav > div:nth-child(2) > ul > li:hover::after{
     color: #00ff9d;
 }
 
-.contact_form > form input:focus{
+.contact_form>form input:focus {
     outline: none;
 }
 
-.form_flex{
+.form_flex {
     display: flex;
     gap: 10px;
 }
 
-.contact_form > form textarea{
+.contact_form>form textarea {
     padding: 20px 10px;
     width: 100%;
     font-size: 1rem;
@@ -552,9 +758,29 @@ nav > div:nth-child(2) > ul > li:hover::after{
     line-height: 1.2rem;
 }
 
-.contact_form > form textarea:focus{
+.contact_form>form textarea:focus {
     outline: none;
 }
 
-/* contact css end hare  */
 
+@media only screen and (max-width: 850px) {
+    .contact_form_main {
+        flex-direction: column;
+    }
+
+    .contact_form_main>div {
+        width: 100%;
+    }
+
+    .contact_form_main>div:nth-child(2) {
+        width: 100%;
+        outline: 2px solid #f39e0b;
+        height: min-content
+    }
+}
+
+@media only screen and (min-width: 851px) and   (max-width : 1000px) {}
+
+
+
+/* contact css end hare  */

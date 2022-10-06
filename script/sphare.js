@@ -3,13 +3,14 @@ const Texts = [
     'TYPESCRIPT', 'MONGOOSE', 'REACT',
     'BOOTSTRAP', 'SASS',
     'CHAKRA-UI', 'NODEJS', 'MONGODB',
-    'EXPRESS-JS', 'GIT/GITHUB', 'JQUERY', 'HEROKU' , "AWS"
+    'EXPRESS-JS', 'GIT/GITHUB', 'JQUERY', 'HEROKU', "AWS"
 ];
 
 var tagCloud = TagCloud('.Sphere', Texts, {
 
     // Sphere radius in px
-    radius: 230,
+
+    radius: innerWidth > 850 ? 230 : 180,
 
     // animation speed
     // slow, normal, fast
