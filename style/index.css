@@ -1,0 +1,495 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body{
+    cursor: url('../custom-cursor.png') , auto;
+    background-color: #171723;
+    position: relative;
+}
+
+
+#curser{
+    position: absolute;
+     width: 30px;
+     height: 30px;
+     border-radius: 50%;
+     border: 2px solid #eee;
+     left: 0;
+     transform: translate(-50% , -50%);
+     pointer-events: none;
+}
+
+#curser.large{
+    width: 40px;
+    height: 40px;    
+}
+
+
+/* header css start hare --------START */
+
+
+header {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    color: #02ffa0;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px;
+}
+
+nav > div:nth-child(1){
+    transform: scale(1.4);
+    padding: 5px 10px;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    font-family: 'Bad Script', cursive;
+    transition: all .2s cubic-bezier(.13,1.41,.39,1.17);
+}
+
+nav > div:nth-child(1):hover{
+    transform: scale(1.5);
+}
+
+
+nav > div:nth-child(1)::after{
+    content: "/>";
+    display: block;
+    position: relative;
+    left: 5px;
+    color: white;
+    border-radius: 50%;
+}
+
+nav > div:nth-child(1)::before{
+    content: "<";
+    display: block;
+    position: relative;
+    bottom: 3px;
+    color: white;
+    left: -5px;
+}
+
+
+nav > div:nth-child(2) > ul > li{
+    display: inline-block;
+    font-size: 17px;
+    margin:0 3px;
+    padding: 5px 10px;
+    /* cursor: pointer; */
+}
+
+
+nav > div:nth-child(2) > ul > li::after{
+    content: "";
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 0;
+    top: 4px;
+    transition: all .2s cubic-bezier(.13,1.41,.39,1.17);
+}
+
+
+nav > div:nth-child(2) > ul > li:hover{
+   color: white;
+}
+
+
+nav > div:nth-child(2) > ul > li:hover::after{
+    background-color: #F7F7F7;
+    width: 100%;
+}
+
+
+/* header css end haer */
+
+
+
+/* html tegs icon css end hare --------START*/
+
+
+.p_start , .p_end {
+    position: relative;
+}
+
+
+.start , .end {
+    font-size: 1rem ;
+    position: absolute;
+    font-style: italic;
+    color: gray;
+}
+
+.start::after{
+    content: " >";
+}
+.start::before{
+    content: "< ";
+}
+
+.end::after{
+    content: " >";
+}
+.end::before{
+    content: "< / ";
+}
+
+
+.start{
+    top: 0;
+    left: 0;
+}
+
+.end{
+    bottom: 0;
+}
+
+.scrollText{
+    position: absolute;
+    right: -50px;
+    bottom: 50px;
+    transform: rotate(90deg);
+    color: #00ff9d;
+}
+
+
+/* html tegs css end hare */
+
+
+
+/* hero image content css hare ---- START  */
+
+.titleDiv{
+    width: 90%;
+    margin:auto;
+    padding: 3rem 0 0 0;
+    position: relative;
+}
+
+.title{
+    font-size: 3rem;
+    color: white;
+}
+
+.title > h1 > span{
+
+    text-shadow: -0.06em 0 #f79e04,  0.06em 0 #00ff9d;
+}
+
+.subtitle{
+    font-size: 1.3rem;
+    margin: 15px 0;
+    color: rgb(156, 156, 156);
+}
+
+.subtitle_btn{
+    margin: 30px 0;
+    position: relative;
+    width: max-content;
+}
+
+.subtitle_btn > span{
+    position: absolute;
+    left: 0;
+    width:0;
+    height: 100%;
+    background-color: #f79e04;
+    clip-path: polygon(0 0, 100% 0, 80% 100%, 0 100%);
+    transition: width .3s ;
+}
+
+.subtitle_btn > button{
+    padding: 15px 50px;
+    font-size: 1rem;
+    background: none;
+    border: 2px solid #f79e04;
+    color: #f79e04;
+    pointer-events: none;
+}
+
+.subtitle_btn:hover > button{
+    color: white;
+}
+
+.subtitle_btn:hover span{
+    width: 100%;
+    z-index: -1;
+}
+
+
+/* hero image content css hare  */
+
+
+
+/* about me css start hare */
+.aboutme{
+    width: 90%;
+    margin: 100px auto 0 auto;
+    position: relative;
+}
+
+
+.aboutme_title > h1 {
+    padding: 20px 0;
+    color: #00ff9d;
+    font-size: 4rem;
+}
+
+.aboutmepara{
+    width: 90%;
+    margin: 10px auto 0 auto;
+    /* border: 1px solid red; */
+    position: relative;
+}
+
+.aboutme_detail > div  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutme_detail > div > div:nth-child(1)  {
+    width: 30%;
+    text-align: center;
+    /* border: 1px solid red; */
+
+}
+
+.aboutme_detail > div > div:nth-child(1) > img {
+    width: 250px;
+    border-radius: 50%;
+    height: 250px;
+    object-fit: cover;
+    object-position: 0 -60px;
+    outline: 3px solid #00ff9d;
+}
+
+.aboutme_detail > div > div:nth-child(2)  {
+    width: 70%;
+    /* border: 1px solid red; */
+}
+
+.aboutme_detail > div > div > p {
+    padding: 5px 0;
+    color: rgb(228, 218, 218);
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+
+.underline{
+    position: relative;
+    color: #00ff9d;
+}
+
+/* about me css end hare */
+
+
+
+
+/* skills css start hare -----START */
+.skills{
+    width: 90%;
+    margin: 100px auto 0 auto;
+}
+
+.skills > div{
+    display: flex;
+}
+
+.skills > div > div:nth-child(1){
+    width: 50%;
+}
+
+.skills > div > div:nth-child(1) > div > h1{
+    padding: 20px 0;
+    font-size: 4rem;
+    color: #00ff9d;
+}
+
+.skills > div > div:nth-child(2){
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+
+.skills > div > div:nth-child(2) > div{
+    width: min-content ;
+    margin: auto;
+}
+
+.skills_tack > h3{
+    padding: 20px 0;
+    font-size: 1.5rem;
+    margin-top: 50px;
+    color: whitesmoke;
+}
+
+
+.skills_para{
+    margin-top: 50px;
+    font-size: 1.3rem;
+    color: whitesmoke;
+    padding: 20px 0;
+    line-height: 1.5rem;
+}
+/* skills css end*/
+
+
+
+/* projects css start hare  */
+
+.projects{
+    width: 90%;
+    margin: 100px auto 0 auto ;
+}
+
+.projects > div:nth-child(1) > div > h1{
+    font-size: 3rem;
+    padding: 20px 0;
+    color: #00ff9d;
+}
+
+
+.projects > div:nth-child(2){
+    margin-top: 50px;
+}
+
+.projects > div:nth-child(2) > div {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    gap: 5px;
+}
+
+.projects > div:nth-child(2) > div > div {
+    width: 24%;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+    flex-grow: 1;
+}
+
+
+.projects > div:nth-child(2) > div > div:hover img {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.projects > div:nth-child(2) > div > div:hover span {
+    transform: scale(1);
+}
+
+.projects > div:nth-child(2) > div > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: .7;
+    transition: all 200ms;
+}
+
+
+.projects > div:nth-child(2) > div > div > span {
+    position: absolute;
+    left: calc(50% - 50px);
+    top: calc(50% - 50px);
+    width: 100px;
+    height: 100px;
+    background-color: #02ffa0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0);
+    transition: all 200ms ;
+    text-align: center;
+}
+
+/* projects css ends hare  */
+
+
+
+/* contact css start hare  */
+
+.contact_me{
+    width: 90%;
+    margin: auto;
+    margin-top: 100px;
+}
+
+
+.contact_title > h1{
+    font-size: 3rem;
+    color: #00ff9d;
+    padding: 20px 0;
+}
+
+
+.contact_form{
+    margin-top: 50px;
+    /* border: 1px solid red; */
+}
+
+.contact_form_main{
+    /* border: 1px solid red; */
+    display: flex;
+}
+
+.contact_form_main > div{
+    width: 50%;
+    /* border: 1px solid red; */
+}
+
+.contact_form > form{
+    padding: 20px 20px;
+}
+
+.contact_form > form > div{
+    padding: 5px 0;
+}
+
+
+.contact_form > form input{
+    padding: 20px 10px;
+    width: 100%;
+    font-size: 1rem;
+    background-color: #2b2b30;
+    border: none;
+    color: #00ff9d;
+}
+
+.contact_form > form input:focus{
+    outline: none;
+}
+
+.form_flex{
+    display: flex;
+    gap: 10px;
+}
+
+.contact_form > form textarea{
+    padding: 20px 10px;
+    width: 100%;
+    font-size: 1rem;
+    background-color: #2b2b30;
+    border: none;
+    color: #00ff9d;
+    line-height: 1.2rem;
+}
+
+.contact_form > form textarea:focus{
+    outline: none;
+}
+
+/* contact css end hare  */
+
