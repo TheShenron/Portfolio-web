@@ -773,7 +773,7 @@ nav>div:nth-child(2)>ul>li:hover::after {
 
 .contact_form_main>div:nth-child(2) {
     width: 50%;
-    outline: 3px solid #00ff9d;
+    outline: 3px solid #FFC052;
     overflow: hidden;
     height: 650px;
 }
