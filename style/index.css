@@ -12,13 +12,6 @@ html {
     scroll-behavior: smooth;
 }
 
-.bubble {
-    position: absolute;
-    background-color: #FFC052;
-    border: 2px solid #f39e0b;
-    border-radius: 50%;
-    z-index: -1;
-}
 
 
 
@@ -58,6 +51,7 @@ body {
 header {
     box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
     color: #02ffa0;
+    background-color: #171723;
 }
 
 nav {
@@ -111,8 +105,13 @@ nav>div:nth-child(2)>ul>li {
     /* cursor: pointer; */
 }
 
+nav>div:nth-child(2)>ul>li > a {
+    text-decoration: none;
+    color: #00ff9d;
+}
 
-nav>div:nth-child(2)>ul>li::after {
+
+nav>div:nth-child(2)>ul>li::after{
     content: "";
     display: block;
     height: 2px;
@@ -123,7 +122,7 @@ nav>div:nth-child(2)>ul>li::after {
 }
 
 
-nav>div:nth-child(2)>ul>li:hover {
+nav>div:nth-child(2)>ul>li:hover a {
     color: white;
 }
 
@@ -132,6 +131,51 @@ nav>div:nth-child(2)>ul>li:hover::after {
     background-color: #F7F7F7;
     width: 100%;
 }
+
+
+.menu_sidebar {
+    position: absolute;
+    right: 100%;
+    top: 60px;
+    width: 100%;
+    height: min-content;
+    background-color: #171723;
+    z-index: 1;
+    transition: right 200ms cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.show{
+    right: 0;
+    box-shadow: 0 0 3px #00ff9d;
+}
+
+
+.menu_sidebar > div > ul {
+    list-style-type: none;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+
+.menu_sidebar > div > ul > li {
+    color: #00ff9d;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.menu_sidebar > div > ul > li > a{
+    color: #00ff9d;
+    text-decoration: none;
+}
+
+.menu_sidebar > div > ul > li:hover {
+    color: #f39e0b;
+    scale: 1.1;
+}
+
 
 /* ----------- meida Query -------------------- */
 
@@ -163,7 +207,19 @@ nav>div:nth-child(2)>ul>li:hover::after {
         height: 4px;
         background-color: #00ff9d;
         margin: 4px 0;
+        margin-left: auto;
     }
+
+    nav>div:nth-child(2)> div > span:nth-child(2){
+        width: 25px;
+    }
+
+    .menu_sidebar > div > ul > li {
+        color: #00ff9d;
+        padding: 15px 0;
+        text-align: center;
+    }
+
 }
 
 @media only screen and (min-width: 851px) and   (max-width : 1000px) {
@@ -712,7 +768,7 @@ nav>div:nth-child(2)>ul>li:hover::after {
 
 .contact_form_main>div:nth-child(2) {
     width: 50%;
-    outline: 2px solid #f39e0b;
+    outline: 3px solid #00ff9d;
     overflow: hidden;
     height: 650px;
 }
@@ -774,8 +830,8 @@ nav>div:nth-child(2)>ul>li:hover::after {
 
     .contact_form_main>div:nth-child(2) {
         width: 100%;
-        outline: 2px solid #f39e0b;
-        height: min-content
+        height: min-content;
+        margin-bottom: 50px;
     }
 }
 
