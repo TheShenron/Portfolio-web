@@ -1,4 +1,7 @@
-# ![]() Portfolio App :)
+
+## 🚀 Portfolio Website
+
+
 
 ## 🛠 Tech Stack :
 
@@ -10,6 +13,13 @@
 ![MIT License](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
 
+## Screenshots
+
+![App Screenshot](protfolioHome.PNG)
+![App Screenshot](portfoliProjectSect.PNG)
+
+
 ## Feedback
 
 If you have any feedback, please reach out to us at Gourav143faz@gmail.com
+
