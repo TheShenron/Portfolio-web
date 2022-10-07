@@ -134,6 +134,7 @@ nav>div:nth-child(2)>ul>li:hover::after {
 
 
 .menu_sidebar {
+    display: none;
     position: absolute;
     right: 100%;
     top: 60px;
@@ -218,6 +219,10 @@ nav>div:nth-child(2)>ul>li:hover::after {
         color: #00ff9d;
         padding: 15px 0;
         text-align: center;
+    }
+
+    .menu_sidebar{
+        display: block;
     }
 
 }
