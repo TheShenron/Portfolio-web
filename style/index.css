@@ -678,20 +678,33 @@ nav>div:nth-child(2)>ul>li:hover::after {
     margin-top: 50px;
 }
 
-.projects>div:nth-child(2)>div {
+/* .projects>div:nth-child(2)>div {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    gap: 5px;
+} */
+
+.projects>div:nth-child(2)>div>div {
+    height: min-content;
+    min-height: 350px;
+
     display: flex;
     flex-wrap: wrap;
     padding: 20px 0;
     gap: 5px;
 }
 
-.projects>div:nth-child(2)>div>div {
-    width: 24%;
-    height: 250px;
-    position: relative;
-    overflow: hidden;
+.projects>div:nth-child(2)>div>div>div {
+    width: 45%;
     flex-grow: 1;
 }
+
+.projects>div:nth-child(2)>div>div>div img {
+    width: 100%;
+    transition: all 200ms;
+}
+
 
 
 .projects>div:nth-child(2)>div>div:hover img {
@@ -703,7 +716,7 @@ nav>div:nth-child(2)>ul>li:hover::after {
     transform: scale(1);
 }
 
-.projects>div:nth-child(2)>div>div>img {
+.projects>div:nth-child(2)>div>div>div>img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -712,7 +725,7 @@ nav>div:nth-child(2)>ul>li:hover::after {
 }
 
 
-.projects>div:nth-child(2)>div>div>span {
+.projects>div:nth-child(2)>div>div>div>a span {
     position: absolute;
     left: calc(50% - 50px);
     top: calc(50% - 50px);
@@ -728,22 +741,60 @@ nav>div:nth-child(2)>ul>li:hover::after {
     text-align: center;
 }
 
+.projectDetails{
+    padding: 0 20px;
+    color: white;
+}
+
+.projectDetails > h2 , .projectDetails > h4{
+    padding-bottom:10px;
+    color: #f39e0b;
+}
+
+.projectDetails > h4{
+    color: #00ff9d;
+}
+
+.projectDetails > p{
+    padding-bottom:10px;
+    line-height: 20px;
+}
+
+.projectDetails > h3{
+    padding-bottom:10px;
+    line-height: 20px;
+    color: #f39e0b;
+}
+
+.projectDetails > ul{
+    padding-bottom:10px;
+    line-height: 20px;
+    padding-left: 20px;
+    /* list-style-type: none; */
+}
 
 
+
+@media only screen and (max-width: 700px) {
+    .projects>div:nth-child(2)>div>div {
+        flex-direction: column;
+    }
+}
 
 @media only screen and (max-width: 850px) {
     .projects {
         margin: 100px auto;
     }
 
-    .projects>div:nth-child(2)>div {
-        gap: 10px;
+    .projects>div:nth-child(2)>div>div>div {
+        width: 100%;
+        flex-grow: 1;
+    }
+
+    .projects>div:nth-child(2)>div>div:nth-child(2n) {
+        flex-direction: column-reverse;
     }
     
-    .projects>div:nth-child(2)>div>div {
-        width: 90%;
-        border: 1px solid #f39e0b;
-    }
 }
 
 @media only screen and (min-width: 851px) and   (max-width : 1000px) {}
