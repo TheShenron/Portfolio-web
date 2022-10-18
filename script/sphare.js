@@ -1,9 +1,9 @@
 const Texts = [
     'HTML', 'CSS', 'JAVASCRIPT',
-    'TYPESCRIPT', 'MONGOOSE', 'REACT',
+    'TYPESCRIPT', 'MONGOOSE', '_REACT',
     'BOOTSTRAP', 'SASS',
     'CHAKRA-UI', 'NODEJS', 'MONGODB',
-    'EXPRESS-JS', 'GIT/GITHUB', 'JQUERY', 'HEROKU', "AWS"
+    'EXPRESS-JS', 'GIT/GITHUB', 'HEROKU'
 ];
 
 const tag = ()=>{
@@ -16,7 +16,7 @@ const tag = ()=>{
     
         // animation speed
         // slow, normal, fast
-        maxSpeed: 'slow',
+        maxSpeed: 'fast',
         initSpeed: 'fast',
     
         // Rolling direction [0 (top) , 90 (left), 135 (right-bottom)] 
@@ -58,5 +58,5 @@ tag()
 
 
 // Giving color to each text in sphere
-var color = '#FFC052';
+var color = '#FFFFFF';
 document.querySelector('.Sphere').style.color = color;
