@@ -551,7 +551,7 @@ nav>div:nth-child(2)>ul>li:hover::after {
     .aboutme_detail>div>div:nth-child(1)>img {
         width: 200px;
         height: 200px;
-        object-position: 0 -50px;
+        /* object-position: 0 -50px; */
         box-shadow: none;
     }
 }
@@ -789,17 +789,47 @@ nav>div:nth-child(2)>ul>li:hover::after {
 
 @media only screen and (min-width: 851px) and   (max-width : 1000px) {}
 
+
+.gitCal {
+    border: none;
+    color: white;
+    margin: 100px 0;
+}
+
+.gitCal .contrib-column{
+    border: none;
+}
+
+.gitCal span{
+    color: white;
+}
+
+.js-calendar-graph-svg{
+    transform: scale(1.2) translateY(-15px);
+}
+
+@media only screen and (max-width: 850px) {
+    .js-calendar-graph-svg{
+        transform: scale(1) translateY(-15px);
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .js-calendar-graph-svg{
+        display: none;
+    }
+}
+
+
+
+
 /* projects css ends hare  */
 
 
 
 /* contact css start hare  */
 
-.contact_me {
-    width: 90%;
-    margin: auto;
-    margin-top: 100px;
-}
+
 
 
 .contact_title>h1 {
