@@ -482,12 +482,12 @@ nav>div:nth-child(2)>ul>li:hover::after {
 }
 
 .aboutme_detail>div>div:nth-child(1)>img {
+    background-color: white;
     width: 230px;
     border-radius: 50%;
     height: 230px;
-    object-fit: cover;
-    object-position: 0 -60px;
-    outline: 2px solid #f39e0b;
+    object-fit: contain;
+    outline: 2px solid #ffffff;
 }
 
 .aboutme_detail>div>div:nth-child(2) {
@@ -537,7 +537,7 @@ nav>div:nth-child(2)>ul>li:hover::after {
     .aboutme_detail>div>div:nth-child(1)>img {
         width: 170px;
         height: 170px;
-        object-position: 0 -50px;
+        /* object-position: 0 -50px; */
         box-shadow: none;
     }
 
@@ -678,95 +678,80 @@ nav>div:nth-child(2)>ul>li:hover::after {
     margin-top: 50px;
 }
 
-/* .projects>div:nth-child(2)>div {
+.projectCard{
     display: flex;
     flex-wrap: wrap;
-    padding: 20px 0;
-    gap: 5px;
-} */
-
-.projects>div:nth-child(2)>div>div {
-    height: min-content;
-    min-height: 350px;
-
-    display: flex;
-    flex-wrap: wrap;
-    padding: 20px 0;
-    gap: 5px;
+    gap: 10px;
+    padding: 10px 0;
+    /* border: 1px solid red; */
 }
 
-.projects>div:nth-child(2)>div>div>div {
-    width: 45%;
+.projectCard > div{
+    width: 48%; 
+    max-width: 50%;   
     flex-grow: 1;
+    margin: 10px 0;
+    /* border: 1px solid yellow; */
 }
 
-.projects>div:nth-child(2)>div>div>div img {
+.projectCard > div > div:nth-child(1){
+    width: 95%;
+    margin: auto;
+    margin-bottom: 20px;
+    /* border: 1px solid palevioletred; */
+}
+
+.projectCard > div > div > img{
     width: 100%;
-    transition: all 200ms;
+    margin: auto; 
+    height: 300px;   
+    /* border: 1px solid yellow; */
+}
+
+
+.icons{
+    display: inline-block;
+    color: white;
+    margin: 0 5px;
+}
+
+.icon_div_hide{
+    display: none;
 }
 
 
 
-.projects>div:nth-child(2)>div>div:hover img {
-    transform: scale(1.1);
-    opacity: 1;
-}
-
-.projects>div:nth-child(2)>div>div:hover span {
-    transform: scale(1);
-}
-
-.projects>div:nth-child(2)>div>div>div>img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: .7;
-    transition: all 200ms;
-}
-
-
-.projects>div:nth-child(2)>div>div>div>a span {
-    position: absolute;
-    left: calc(50% - 50px);
-    top: calc(50% - 50px);
-    width: 100px;
-    height: 100px;
-    background-color: #02ffa0;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transform: scale(0);
-    transition: all 200ms;
-    text-align: center;
-}
 
 .projectDetails{
     padding: 0 20px;
     color: white;
 }
 
-.projectDetails > h2 , .projectDetails > h4{
+.projectDetails > div{
+    margin-top: 15px;
+}
+
+.projectDetails > div > h2 , .projectDetails > div >  h4{
     padding-bottom:10px;
     color: #f39e0b;
 }
 
-.projectDetails > h4{
+.projectDetails > div > h4{
     color: #00ff9d;
 }
 
-.projectDetails > p{
+.projectDetails > div > p{
     padding-bottom:10px;
     line-height: 20px;
 }
 
-.projectDetails > h3{
+.projectDetails > div > h3{
     padding-bottom:10px;
     line-height: 20px;
     color: #f39e0b;
 }
 
-.projectDetails > ul{
+.projectDetails > div > ul{
     padding-bottom:10px;
     line-height: 20px;
     padding-left: 20px;
@@ -776,8 +761,13 @@ nav>div:nth-child(2)>ul>li:hover::after {
 
 
 @media only screen and (max-width: 700px) {
-    .projects>div:nth-child(2)>div>div {
-        flex-direction: column;
+    
+
+    .projectCard > div{
+        min-width: 98%; 
+        flex-grow: 1;
+        margin: 20px 0;
+        /* border: 1px solid yellow; */
     }
 }
 
