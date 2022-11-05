@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
         integrity="sha384-xeJqLiuOvjUBq3iGOjvSQSIlwrpqjSHXpduPd6rQpuiM3f5/ijby8pCsnbu5S81n" crossorigin="anonymous">
 
-    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
-    </script>
+    <!-- <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+    </script> -->
 
-    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
+    <!-- <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" /> -->
 
     <!-- style links  -->
     <link rel="stylesheet" href="./style/particle.css">
@@ -399,7 +399,16 @@
 
     <div class="calendar gitCal">
         <!-- Loading stuff -->
-        Loading the data just for you.
+        <img
+            src="https://github-readme-streak-stats.herokuapp.com/?user=TheShenron&hide=smalltalk&theme=algolia&layout=compact"
+            alt="TheShenron" />
+
+        <img alt="TheShenron's github stats"
+            src="https://github-readme-stats.vercel.app/api?username=TheShenron&show_icons=true&theme=algolia&count_private=true" />
+
+        <img alt="TheShenron"
+            src="https://activity-graph.herokuapp.com/graph?username=TheShenron&bg_color=0D1117&color=e05397&line=e05397&point=FFFFFF&hide_border=true&" />
+        
     </div>
 
 
@@ -493,19 +502,6 @@
     <script src="./script/sphare.js"></script>
     <script src="./script/moveToTop.js"></script>
 
-    <script>
-        GitHubCalendar(".calendar", "theshenron");
-
-        // or enable responsive functionality:
-        GitHubCalendar(".calendar", "theshenron", { responsive: true });
-
-        // Use a proxy
-        GitHubCalendar(".calendar", "theshenron", {
-            proxy(username) {
-                return fetch(`https://your-proxy.com/github?user=${theshenron}`)
-            }
-        }).then(r => r.text())
-    </script>
 
 
 </body>

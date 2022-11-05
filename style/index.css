@@ -105,13 +105,13 @@ nav>div:nth-child(2)>ul>li {
     /* cursor: pointer; */
 }
 
-nav>div:nth-child(2)>ul>li > a {
+nav>div:nth-child(2)>ul>li>a {
     text-decoration: none;
     color: #00ff9d;
 }
 
 
-nav>div:nth-child(2)>ul>li::after{
+nav>div:nth-child(2)>ul>li::after {
     content: "";
     display: block;
     height: 2px;
@@ -147,13 +147,13 @@ nav>div:nth-child(2)>ul>li:hover::after {
     border-radius: 0 5px 5px 0;
 }
 
-.show{
+.show {
     left: 0;
     top: 0;
 }
 
 
-.menu_sidebar > div > ul {
+.menu_sidebar>div>ul {
     list-style-type: none;
     position: relative;
     display: flex;
@@ -164,18 +164,18 @@ nav>div:nth-child(2)>ul>li:hover::after {
 }
 
 
-.menu_sidebar > div > ul > li {
+.menu_sidebar>div>ul>li {
     text-align: center;
 }
 
-.menu_sidebar > div > ul > li > a{
+.menu_sidebar>div>ul>li>a {
     color: #f39e0b;
     text-decoration: none;
     box-shadow: 0 0 2px #f39e0b;
     padding: 10px 15px;
 }
 
-.menu_sidebar > div > ul > li:hover {
+.menu_sidebar>div>ul>li:hover {
     color: #f39e0b;
     scale: 1.1;
 }
@@ -184,10 +184,10 @@ nav>div:nth-child(2)>ul>li:hover::after {
 /* ----------- meida Query -------------------- */
 
 @media only screen and (max-width: 625px) {
-    .menu_sidebar > div > ul {
+    .menu_sidebar>div>ul {
         gap: 20px;
         /* flex-wrap: wrap; */
-    } 
+    }
 }
 
 
@@ -200,7 +200,7 @@ nav>div:nth-child(2)>ul>li:hover::after {
         transform: scale(1.1);
         padding: 5px 30px;
     }
-    
+
     nav>div:nth-child(1):hover {
         transform: scale(1.2);
     }
@@ -209,11 +209,11 @@ nav>div:nth-child(2)>ul>li:hover::after {
         display: none;
     }
 
-    nav>div:nth-child(2)> div{
+    nav>div:nth-child(2)>div {
         padding: 0 20px;
     }
 
-    nav>div:nth-child(2)> div > span{
+    nav>div:nth-child(2)>div>span {
         display: block;
         width: 30px;
         height: 4px;
@@ -222,28 +222,28 @@ nav>div:nth-child(2)>ul>li:hover::after {
         margin-left: auto;
     }
 
-    nav>div:nth-child(2)> div > span:nth-child(2){
+    nav>div:nth-child(2)>div>span:nth-child(2) {
         width: 25px;
     }
 
-    .menu_sidebar > div > ul > li {
+    .menu_sidebar>div>ul>li {
         color: #00ff9d;
         padding: 15px 0;
         text-align: center;
     }
 
-    .menu_sidebar{
+    .menu_sidebar {
         display: block;
     }
 
 }
 
-@media only screen and (min-width: 851px) and   (max-width : 1000px) {
+@media only screen and (min-width: 851px) and (max-width : 1000px) {
     nav {
         padding: 10px 50px;
     }
 
-    nav>div:nth-child(2)> div{
+    nav>div:nth-child(2)>div {
         display: none;
     }
 
@@ -440,7 +440,7 @@ nav>div:nth-child(2)>ul>li:hover::after {
         align-items: flex-start;
     }
 
-    
+
 }
 
 
@@ -531,7 +531,7 @@ nav>div:nth-child(2)>ul>li:hover::after {
 
     .aboutme_detail>div>div:nth-child(1) {
         width: 90%;
-        margin: 30px 0;    
+        margin: 30px 0;
     }
 
     .aboutme_detail>div>div:nth-child(1)>img {
@@ -547,7 +547,7 @@ nav>div:nth-child(2)>ul>li:hover::after {
     }
 }
 
-@media only screen and (min-width: 851px) and   (max-width : 1000px) {
+@media only screen and (min-width: 851px) and (max-width : 1000px) {
     .aboutme_detail>div>div:nth-child(1)>img {
         width: 200px;
         height: 200px;
@@ -619,32 +619,32 @@ nav>div:nth-child(2)>ul>li:hover::after {
     .skills>div {
         flex-direction: column;
     }
-    
+
     .skills>div>div:nth-child(1) {
         width: 100%;
     }
-    
+
     .skills>div>div:nth-child(1)>div>h1 {
         font-size: 3rem;
     }
-    
+
     .skills>div>div:nth-child(2) {
         width: 100%;
     }
-    
+
     .skills>div>div:nth-child(2)>div {
         width: min-content;
         margin: auto;
     }
-    
+
     .skills_tack>h3 {
         padding: 20px 0;
         font-size: 1.5rem;
         margin-top: 50px;
         color: whitesmoke;
     }
-    
-    
+
+
     .skills_para {
         margin-top: 50px;
         font-size: 1.3rem;
@@ -654,7 +654,7 @@ nav>div:nth-child(2)>ul>li:hover::after {
     }
 }
 
-@media only screen and (min-width: 851px) and   (max-width : 1000px) {}
+@media only screen and (min-width: 851px) and (max-width : 1000px) {}
 
 /* skills css end*/
 
@@ -678,7 +678,7 @@ nav>div:nth-child(2)>ul>li:hover::after {
     margin-top: 50px;
 }
 
-.projectCard{
+.projectCard {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -686,73 +686,74 @@ nav>div:nth-child(2)>ul>li:hover::after {
     /* border: 1px solid red; */
 }
 
-.projectCard > div{
-    width: 48%; 
-    max-width: 50%;   
+.projectCard>div {
+    width: 48%;
+    max-width: 50%;
     flex-grow: 1;
     margin: 10px 0;
     /* border: 1px solid yellow; */
 }
 
-.projectCard > div > div:nth-child(1){
+.projectCard>div>div:nth-child(1) {
     width: 95%;
     margin: auto;
     margin-bottom: 20px;
     /* border: 1px solid palevioletred; */
 }
 
-.projectCard > div > div > img{
+.projectCard>div>div>img {
     width: 100%;
-    margin: auto; 
-    height: 300px;   
+    margin: auto;
+    height: 300px;
     /* border: 1px solid yellow; */
 }
 
 
-.icons{
+.icons {
     display: inline-block;
     color: white;
     margin: 0 5px;
 }
 
-.icon_div_hide{
+.icon_div_hide {
     display: none;
 }
 
 
 
 
-.projectDetails{
+.projectDetails {
     padding: 0 20px;
     color: white;
 }
 
-.projectDetails > div{
+.projectDetails>div {
     margin-top: 15px;
 }
 
-.projectDetails > div > h2 , .projectDetails > div >  h4{
-    padding-bottom:10px;
+.projectDetails>div>h2,
+.projectDetails>div>h4 {
+    padding-bottom: 10px;
     color: #f39e0b;
 }
 
-.projectDetails > div > h4{
+.projectDetails>div>h4 {
     color: #00ff9d;
 }
 
-.projectDetails > div > p{
-    padding-bottom:10px;
+.projectDetails>div>p {
+    padding-bottom: 10px;
     line-height: 20px;
 }
 
-.projectDetails > div > h3{
-    padding-bottom:10px;
+.projectDetails>div>h3 {
+    padding-bottom: 10px;
     line-height: 20px;
     color: #f39e0b;
 }
 
-.projectDetails > div > ul{
-    padding-bottom:10px;
+.projectDetails>div>ul {
+    padding-bottom: 10px;
     line-height: 20px;
     padding-left: 20px;
     /* list-style-type: none; */
@@ -761,10 +762,10 @@ nav>div:nth-child(2)>ul>li:hover::after {
 
 
 @media only screen and (max-width: 700px) {
-    
 
-    .projectCard > div{
-        min-width: 98%; 
+
+    .projectCard>div {
+        min-width: 98%;
         flex-grow: 1;
         margin: 20px 0;
         /* border: 1px solid yellow; */
@@ -784,39 +785,30 @@ nav>div:nth-child(2)>ul>li:hover::after {
     .projects>div:nth-child(2)>div>div:nth-child(2n) {
         flex-direction: column-reverse;
     }
-    
+
 }
 
-@media only screen and (min-width: 851px) and   (max-width : 1000px) {}
+@media only screen and (min-width: 851px) and (max-width : 1000px) {}
 
 
 .gitCal {
-    border: none;
-    color: white;
-    margin: 100px 0;
+    margin-bottom: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
 }
 
-.gitCal .contrib-column{
-    border: none;
+.gitCal img {
+    object-fit: cover;
 }
 
-.gitCal span{
-    color: white;
-}
 
-.js-calendar-graph-svg{
-    transform: scale(1.2) translateY(-15px);
-}
 
-@media only screen and (max-width: 850px) {
-    .js-calendar-graph-svg{
-        transform: scale(1) translateY(-15px);
-    }
-}
 
-@media only screen and (max-width: 700px) {
-    .js-calendar-graph-svg{
-        display: none;
+@media only screen and (max-width: 1000px) {
+    .gitCal img {
+        width: 90%;
     }
 }
 
@@ -845,6 +837,9 @@ nav>div:nth-child(2)>ul>li:hover::after {
 
 .contact_form_main {
     display: flex;
+    width: 90%;
+    margin: auto;
+   
 }
 
 .contact_form_main>div {
@@ -852,7 +847,6 @@ nav>div:nth-child(2)>ul>li:hover::after {
 }
 
 .contact_form_main>div:nth-child(2) {
-    width: 50%;
     outline: 3px solid #FFC052;
     overflow: hidden;
     height: 650px;
@@ -914,13 +908,13 @@ nav>div:nth-child(2)>ul>li:hover::after {
     }
 
     .contact_form_main>div:nth-child(2) {
-        width: 100%;
+        width: 95%;
         height: min-content;
-        margin-bottom: 50px;
+        margin: 50px auto;
     }
 }
 
-@media only screen and (min-width: 851px) and   (max-width : 1000px) {}
+@media only screen and (min-width: 851px) and (max-width : 1000px) {}
 
 
 
