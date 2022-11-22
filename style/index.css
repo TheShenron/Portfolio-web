@@ -390,6 +390,19 @@ nav>div:nth-child(2)>ul>li:hover::after {
     width: max-content;
 }
 
+.download > a{
+    color: #00ff9d;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.download > a >i {
+    font-size: 30px;
+}
+
 .subtitle_btn>span {
     position: absolute;
     left: 0;

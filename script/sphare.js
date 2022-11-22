@@ -12,7 +12,7 @@ const tag = ()=>{
 
         // Sphere radius in px
     
-        radius: innerWidth > 850 ? 230 : 180,
+        radius: innerWidth > 800 ? 230 : innerWidth > 750 ? 180 : innerWidth > 400 ? 170 : innerWidth > 300 ? 160 : 140,
     
         // animation speed
         // slow, normal, fast
@@ -31,25 +31,9 @@ const tag = ()=>{
 }
 
 
-
-let s1 = innerWidth > 850 ? true : false
 window.addEventListener("resize" , ()=>{
-    let screen_size = innerWidth
-
-    if(screen_size > 850){
-        if(s1){
-            s1 = false
-            document.querySelector(".Sphere").innerHTML=""
-            tag()
-        } 
-    }else{
-        if(s1 == false){
-            s1 = true
-            document.querySelector(".Sphere").innerHTML=""
-            tag()
-        } 
-
-    }
+    document.querySelector(".Sphere").innerHTML=""
+    tag()
 })
 
 tag()
