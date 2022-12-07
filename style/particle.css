@@ -1,9 +1,0 @@
-#canvas {
-    position: absolute;
-    top: 60px; left: 0;
-    height: calc(100vh - 60px);
-    width: 100%;
-    /* background: radial-gradient( #fff , #fff); */
-    background-color: #171723;
-    z-index: -1;
-}
