@@ -7,6 +7,8 @@ import { FaGithub } from 'react-icons/fa'
 import kickstater from "../img/kickstater.png"
 import kindMeal from '../img/kindMeal.png'
 import LMS from '../img/LMS.png'
+import mynet from '../img/mynet.png'
+import milap from '../img/milap.png'
 
 
 function Project(props) {
@@ -21,7 +23,10 @@ function Project(props) {
 
                 <Flex my={['20px']} flexWrap='wrap' flexDirection={['column', 'column', 'row']}>
 
-                    <Box w={['100%', '100%', '50%']} p={['5px', '30px 20px']}>
+
+                    {/* Library Management sysytem project */}
+
+                    {/* <Box w={['100%', '100%', '50%']} p={['5px', '30px 20px']}>
 
                         <Box overflow='hidden'>
                             <Image src={LMS} w={['100%', '95%']} />
@@ -62,7 +67,13 @@ function Project(props) {
                             </List>
                             <Text fontWeight='500' fontSize='md'>Executed in 6 days (solo project)</Text>
                         </Flex>
-                    </Box>
+                    </Box> */}
+
+
+
+
+
+                    {/* Kind Meal project */}
 
 
                     <Box w={['100%', '100%', '50%']} p={['5px', '30px 20px']}>
@@ -72,9 +83,9 @@ function Project(props) {
                         </Box>
 
                         <Flex direction='column' gap='15px' py='20px'>
-                            <Text fontWeight='500' fontSize='2xl'>Kindmeal Web Colne  
-                            <Link target='_blank' href='https://github.com/TheShenron/numberless-silk-6009'> <Icon as={FaExternalLinkSquareAlt} position='relative' top='3px' /> </Link>  
-                            <Link target='_blank' href='https://github.com/TheShenron/numberless-silk-6009'> <Icon as={FaGithub} position='relative' top='3px' /> </Link>   </Text>
+                            <Text fontWeight='500' fontSize='2xl'>Kindmeal Web Colne
+                                <Link target='_blank' href='https://github.com/TheShenron/numberless-silk-6009'> <Icon as={FaExternalLinkSquareAlt} position='relative' top='3px' /> </Link>
+                                <Link target='_blank' href='https://github.com/TheShenron/numberless-silk-6009'> <Icon as={FaGithub} position='relative' top='3px' /> </Link>   </Text>
                             <Text fontSize=''>KindMeal.my is Malaysia's leading meat-free lifestyle platform</Text>
                             <Text fontWeight='500' fontSize='xl'>Features:</Text>
                             <List spacing={1}>
@@ -99,12 +110,13 @@ function Project(props) {
                                     discover restaurants, read and write customer generated reviews and view and upload photos,
                                 </ListItem>
                             </List>
-                            <Text fontWeight='500' fontSize='md'>Executed in 5 days with a team of 6</Text>
+                            <Text fontWeight='500' fontSize='md'>Executed in 5 days with a team of 5</Text>
                         </Flex>
                     </Box>
 
 
 
+                    {/* Kick stater project */}
 
                     <Box w={['100%', '100%', '50%']} p={['5px', '30px 20px']}>
 
@@ -113,9 +125,9 @@ function Project(props) {
                         </Box>
 
                         <Flex direction='column' gap='15px' py='20px'>
-                            <Text fontWeight='500' fontSize='2xl'>kickstarter Clone 
-                            <Link href='https://kickstarter-clone-def219.netlify.app/' target='_blank'> <Icon as={FaExternalLinkSquareAlt} position='relative' top='3px' /> </Link>  
-                            <Link target='_blank' href='https://github.com/TheShenron/overconfident-door-5197'> <Icon as={FaGithub} position='relative' top='3px' /> </Link>   </Text>
+                            <Text fontWeight='500' fontSize='2xl'>kickstarter Clone
+                                <Link href='https://kickstarter-clone-def219.netlify.app/' target='_blank'> <Icon as={FaExternalLinkSquareAlt} position='relative' top='3px' /> </Link>
+                                <Link target='_blank' href='https://github.com/TheShenron/overconfident-door-5197'> <Icon as={FaGithub} position='relative' top='3px' /> </Link>   </Text>
                             <Text fontSize=''>Itʼs where creators share new visions for creative work with the communities that will come together to fund them.</Text>
                             <Text fontWeight='500' fontSize='xl'>Features:</Text>
                             <List spacing={1}>
@@ -133,6 +145,87 @@ function Project(props) {
                                 </ListItem>
                             </List>
                             <Text fontWeight='500' fontSize='xl'>Tech stack: HTML | CSS | JS</Text>
+                            <Text fontWeight='500' fontSize='md'>Executed in 4 days (solo project)</Text>
+                        </Flex>
+                    </Box>
+
+
+                    {/* MyNetDiary project */}
+                    <Box w={['100%', '100%', '50%']} p={['5px', '30px 20px']}>
+
+                        <Box overflow='hidden'>
+                            <Image src={mynet} w={['100%', '95%']} />
+                        </Box>
+
+                        <Flex direction='column' gap='15px' py='20px'>
+                            <Text fontWeight='500' fontSize='2xl'>MyNetDiary Clone
+                                <Link href='https://jazzy-scone-de755c.netlify.app/' target='_blank'> <Icon as={FaExternalLinkSquareAlt} position='relative' top='3px' /> </Link>
+                                <Link target='_blank' href='https://github.com/TheShenron/unusual-bath-4203'> <Icon as={FaGithub} position='relative' top='3px' /> </Link>   </Text>
+                            <Text fontSize=''>MyNetDiary guides your weight loss journey with accurate calorie counting, weight loss forecasting and personalized daily insights. :)</Text>
+                            <Text fontWeight='500' fontSize='xl'>Features:</Text>
+                            <List spacing={1}>
+                                <ListItem>
+                                    <ListIcon as={BsDot} />
+                                    Soft Landing Page
+                                </ListItem>
+                                <ListItem>
+                                    <ListIcon as={BsDot} />
+                                    Form validation
+                                </ListItem>
+                                <ListItem>
+                                    <ListIcon as={BsDot} />
+                                    Food-weigth calculator
+                                </ListItem>
+                                <ListItem>
+                                    <ListIcon as={BsDot} />
+                                    Responsiveness UI
+                                </ListItem>
+                            </List>
+                            <Text fontWeight='500' fontSize='xl'>Tech stack: HTML | CSS | JS</Text>
+                            <Text fontWeight='500' fontSize='md'>Executed in 4 days with a team of 5</Text>
+                        </Flex>
+                    </Box>
+
+
+                    {/* Milap clone */}
+                    <Box w={['100%', '100%', '50%']} p={['5px', '30px 20px']}>
+
+                        <Box overflow='hidden'>
+                            <Image src={milap} w={['100%', '95%']} />
+                        </Box>
+
+                        <Flex direction='column' gap='15px' py='20px'>
+                            <Text fontWeight='500' fontSize='2xl'>Milaap.org Clone
+                                <Link href='https://milaap-reactapp-ab2b6e.netlify.app/' target='_blank'> <Icon as={FaExternalLinkSquareAlt} position='relative' top='3px' /> </Link>
+                                <Link target='_blank' href='https://github.com/TheShenron/vigorous-ticket-1895'> <Icon as={FaGithub} position='relative' top='3px' /> </Link>   </Text>
+                            <Text fontSize=''>We enable anyone across India to raise funds for medical, environmental, educational, memorial, animal welfare, sports, community causes and more</Text>
+                            <Text fontWeight='500' fontSize='xl'>Features:</Text>
+                            <List spacing={1}>
+                                <ListItem>
+                                    <ListIcon as={BsDot} />
+                                    Soft Landing Page
+                                </ListItem>
+                                <ListItem>
+                                    <ListIcon as={BsDot} />
+                                    Form validation
+                                </ListItem>
+                                <ListItem>
+                                    <ListIcon as={BsDot} />
+                                    Private Routing 
+                                </ListItem>
+                                <ListItem>
+                                    <ListIcon as={BsDot} />
+                                    Google Oauth
+                                </ListItem>
+                            </List>
+                            <Text fontWeight='500' fontSize='xl'>Tech stack: ReactJS | Redux | ChakraUI </Text>
+                            <Text fontWeight='500' fontSize='xl'>Area of Responsibility:</Text>
+                            <List spacing={1}>
+                                <ListItem>
+                                    <ListIcon as={BsDot} />
+                                    to raise funds for medical, environmental, educational etc.
+                                </ListItem>
+                            </List>
                             <Text fontWeight='500' fontSize='md'>Executed in 4 days (solo project)</Text>
                         </Flex>
                     </Box>
