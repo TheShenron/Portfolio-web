@@ -75,6 +75,7 @@ function Nav(props) {
         <Spacer />
 
         <Flex gap={[0, 0, 5, 7]} p='2' pr={[0, 2, 4, 10]} display={['none', 'none', 'flex', 'flex']} fontWeight='bold'>
+          
           <Link _hover={{textDecoration:'none' , color:"#ef6817"}} href='#Home'>Home</Link>
           <Link _hover={{textDecoration:'none' , color:"#ef6817"}} href='#About'>About</Link>
           <Link _hover={{textDecoration:'none' , color:"#ef6817"}} href='#Skills'>Skills</Link>

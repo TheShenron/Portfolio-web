@@ -1,8 +1,13 @@
 import React from 'react';
 import { Box, Flex, Heading, Icon, Image, Link, List, ListIcon, ListItem, Text } from '@chakra-ui/react';
-import { FaCheckCircle } from 'react-icons/fa'
+import { BsDot } from 'react-icons/bs'
 import { FaExternalLinkSquareAlt } from 'react-icons/fa'
 import { FaGithub } from 'react-icons/fa'
+
+import kickstater from "../img/kickstater.png"
+import kindMeal from '../img/kindMeal.png'
+import LMS from '../img/LMS.png'
+
 
 function Project(props) {
     return (
@@ -14,79 +19,125 @@ function Project(props) {
                 </Flex>
 
 
-                <Flex my={['20px']} flexWrap='wrap' flexDirection={['column' , 'column' ,'row']}>
+                <Flex my={['20px']} flexWrap='wrap' flexDirection={['column', 'column', 'row']}>
 
-                    <Box w={['100%' , '100%' , '50%']} p={['5px', '30px 20px']}>
+                    <Box w={['100%', '100%', '50%']} p={['5px', '30px 20px']}>
 
                         <Box overflow='hidden'>
-                            <Image src='https://theshenron.github.io/Portfolio-web/img/millap.PNG' w={['100%','95%']}/>
+                            <Image src={LMS} w={['100%', '95%']} />
                         </Box>
 
                         <Flex direction='column' gap='15px' py='20px'>
-                            <Text fontWeight='500' fontSize='2xl'>Milaap.org Clone  <Link href='https://milaap-reactapp-ab2b6e.netlify.app/' target='_blank'> <Icon as={FaExternalLinkSquareAlt} position='relative' top='3px'/> </Link>  <Link target='_blank' href='https://github.com/TheShenron/vigorous-ticket-1895'> <Icon as={FaGithub} position='relative' top='3px'/> </Link>   </Text>
-                            <Text fontSize=''>We enable anyone across India to raise funds for medical, environmental, educational, animal welfare, community causes and more</Text>
+                            <Text fontWeight='500' fontSize='2xl'>Integrated_Library_Software_ILS 
+                            <Link href='https://github.com/TheShenron/Integrated_Library_Software_ILS' target='_blank'> <Icon as={FaExternalLinkSquareAlt} position='relative' top='3px' /> 
+                            </Link>  <Link target='_blank' href='https://github.com/TheShenron/Integrated_Library_Software_ILS'> <Icon as={FaGithub} position='relative' top='3px' /> </Link>   </Text>
+                            <Text fontSize=''> The purpose of this LMS is to manage & track the daily work of the
+                                library such as issuing books, return books, due calculations, etc.</Text>
                             <Text fontWeight='500' fontSize='xl'>Features:</Text>
                             <List spacing={1}>
                                 <ListItem>
-                                    <ListIcon as={FaCheckCircle}/>
-                                    Social Sign-in/Sign-up
+                                    <ListIcon as={BsDot} />
+                                    Token-based authentication with JWT
                                 </ListItem>
                                 <ListItem>
-                                    <ListIcon as={FaCheckCircle} />
-                                    Ecommerce functionality
+                                    <ListIcon as={BsDot} />
+                                    Password Hashing with bcrypt
                                 </ListItem>
                                 <ListItem>
-                                    <ListIcon as={FaCheckCircle} />
-                                    Different Payment Gateway
+                                    <ListIcon as={BsDot} />
+                                    Persisting data on page refresh in react
+                                </ListItem>
+                                <ListItem>
+                                    <ListIcon as={BsDot} />
+                                    Admin panel with roles & permissions
                                 </ListItem>
                             </List>
-                            <Text fontWeight='500' fontSize='xl'>Tech stack: ReactJS | ChakraUI | Icons</Text>
+                            <Text fontWeight='500' fontSize='xl'>Tech stack:  ReactJS | NodeJS | Express | MongoDB | ChakraUI</Text>
                             <Text fontWeight='500' fontSize='xl'>Area of Responsibility:</Text>
                             <List spacing={1}>
                                 <ListItem>
-                                    <ListIcon as={FaCheckCircle} />
-                                    Built the Authentication via React/Privit Routing
-                                </ListItem>
-                                <ListItem>
-                                    <ListIcon as={FaCheckCircle} />
-                                    Developed the Product Page and Filter/Sorting in the website
+                                    <ListIcon as={BsDot} />
+                                    Planning, Organizing, and Controlling.
                                 </ListItem>
                             </List>
+                            <Text fontWeight='500' fontSize='md'>Executed in 6 days (solo project)</Text>
                         </Flex>
                     </Box>
 
 
-
-
-                    <Box w={['100%' , '100%' , '50%']} p={['5px', '30px 20px']}>
+                    <Box w={['100%', '100%', '50%']} p={['5px', '30px 20px']}>
 
                         <Box overflow='hidden'>
-                            <Image src='https://theshenron.github.io/Portfolio-web/img/Kickstater.PNG' w={['100%','95%']}/>
+                            <Image src={kindMeal} w={['100%', '95%']} />
                         </Box>
 
                         <Flex direction='column' gap='15px' py='20px'>
-                            <Text fontWeight='500' fontSize='2xl'>kickstarter.com Clone  <Link target='_blank' href='https://kickstarter-clone-def219.netlify.app/'> <Icon as={FaExternalLinkSquareAlt} position='relative' top='3px'/> </Link>  <Link target='_blank' href='https://github.com/TheShenron/overconfident-door-5197'> <Icon as={FaGithub} position='relative' top='3px'/> </Link>   </Text>
-                            <Text fontSize=''>It’s where creators share new visions for creative work with the communities that will come together to fund them.</Text>
+                            <Text fontWeight='500' fontSize='2xl'>Kindmeal Web Colne  
+                            <Link target='_blank' href='https://github.com/TheShenron/numberless-silk-6009'> <Icon as={FaExternalLinkSquareAlt} position='relative' top='3px' /> </Link>  
+                            <Link target='_blank' href='https://github.com/TheShenron/numberless-silk-6009'> <Icon as={FaGithub} position='relative' top='3px' /> </Link>   </Text>
+                            <Text fontSize=''>KindMeal.my is Malaysia's leading meat-free lifestyle platform</Text>
                             <Text fontWeight='500' fontSize='xl'>Features:</Text>
                             <List spacing={1}>
                                 <ListItem>
-                                    <ListIcon as={FaCheckCircle}/>
-                                    Sign-in/Sign-up
+                                    <ListIcon as={BsDot} />
+                                    Implemented comment system
                                 </ListItem>
                                 <ListItem>
-                                    <ListIcon as={FaCheckCircle} />
-                                    Soft Landing Page
+                                    <ListIcon as={BsDot} />
+                                    Product tracking with admin panel
                                 </ListItem>
                                 <ListItem>
-                                    <ListIcon as={FaCheckCircle} />
-                                    Responsiveness
+                                    <ListIcon as={BsDot} />
+                                    Form validation
                                 </ListItem>
                             </List>
-                            <Text fontWeight='500' fontSize='xl'>Tech stack: HTML | CSS | JS</Text>
+                            <Text fontWeight='500' fontSize='xl'>ReactJS | NodeJS | Express | MongoDB | ChakraUI</Text>
+                            <Text fontWeight='500' fontSize='xl'>Area of Responsibility:</Text>
+                            <List spacing={1}>
+                                <ListItem>
+                                    <ListIcon as={BsDot} />
+                                    discover restaurants, read and write customer generated reviews and view and upload photos,
+                                </ListItem>
+                            </List>
+                            <Text fontWeight='500' fontSize='md'>Executed in 5 days with a team of 6</Text>
                         </Flex>
                     </Box>
 
-                    
+
+
+
+                    <Box w={['100%', '100%', '50%']} p={['5px', '30px 20px']}>
+
+                        <Box overflow='hidden'>
+                            <Image src={kickstater} w={['100%', '95%']} />
+                        </Box>
+
+                        <Flex direction='column' gap='15px' py='20px'>
+                            <Text fontWeight='500' fontSize='2xl'>kickstarter Clone 
+                            <Link href='https://kickstarter-clone-def219.netlify.app/' target='_blank'> <Icon as={FaExternalLinkSquareAlt} position='relative' top='3px' /> </Link>  
+                            <Link target='_blank' href='https://github.com/TheShenron/overconfident-door-5197'> <Icon as={FaGithub} position='relative' top='3px' /> </Link>   </Text>
+                            <Text fontSize=''>Itʼs where creators share new visions for creative work with the communities that will come together to fund them.</Text>
+                            <Text fontWeight='500' fontSize='xl'>Features:</Text>
+                            <List spacing={1}>
+                                <ListItem>
+                                    <ListIcon as={BsDot} />
+                                    Soft Landing Page
+                                </ListItem>
+                                <ListItem>
+                                    <ListIcon as={BsDot} />
+                                    Form validation
+                                </ListItem>
+                                <ListItem>
+                                    <ListIcon as={BsDot} />
+                                    Responsiveness UI
+                                </ListItem>
+                            </List>
+                            <Text fontWeight='500' fontSize='xl'>Tech stack: HTML | CSS | JS</Text>
+                            <Text fontWeight='500' fontSize='md'>Executed in 4 days (solo project)</Text>
+                        </Flex>
+                    </Box>
+
+
 
                 </Flex>
 
