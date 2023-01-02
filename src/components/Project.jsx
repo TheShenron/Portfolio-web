@@ -9,6 +9,7 @@ import kindMeal from '../img/kindMeal.png'
 import LMS from '../img/LMS.png'
 import mynet from '../img/mynet.png'
 import milap from '../img/milap.png'
+import chatapp from '../img/chatapp.png'
 
 
 function Project(props) {
@@ -70,6 +71,53 @@ function Project(props) {
                     </Box> */}
 
 
+                    {/* chatty app */}
+
+
+                    <Box w={['100%', '100%', '50%']} p={['5px', '30px 20px']}>
+
+                        <Box overflow='hidden'>
+                            <Image src={chatapp} w={['100%', '95%']} />
+                        </Box>
+
+                        <Flex direction='column' gap='15px' py='20px'>
+                            <Text fontWeight='500' fontSize='2xl'>Real time Chat-App
+                                <Link href='https://clever-snickerdoodle-7f7cc4.netlify.app' target='_blank'> <Icon as={FaExternalLinkSquareAlt} position='relative' top='3px' /> </Link>
+                                <Link target='_blank' href='https://github.com/TheShenron/Squad-IV'> <Icon as={FaGithub} position='relative' top='3px' /> </Link>   </Text>
+                            <Text fontSize=''>This app allows you to communicate with your Friends & Family. It
+                                enables you to send and receive messages real time ....</Text>
+                            <Text fontWeight='500' fontSize='xl'>Features:</Text>
+                            <List spacing={1}>
+                                <ListItem>
+                                    <ListIcon as={BsDot} />
+                                    Token-based authentication with JWT
+                                </ListItem>
+                                <ListItem>
+                                    <ListIcon as={BsDot} />
+                                    Password Hashing with bcrypt
+                                </ListItem>
+                                <ListItem>
+                                    <ListIcon as={BsDot} />
+                                    Group & One-on-One Chat
+                                </ListItem>
+                                <ListItem>
+                                    <ListIcon as={BsDot} />
+                                    Typing Indicator with Notification system(WIP)
+                                </ListItem>
+                            </List>
+                            <Text fontWeight='500' fontSize='xl'>Tech stack: NextJS | NodeJS | Express | MongoDB | ChakraUI </Text>
+                            <Text fontWeight='500' fontSize='xl'>Area of Responsibility:</Text>
+                            <List spacing={1}>
+                                <ListItem>
+                                    <ListIcon as={BsDot} />
+                                    Enables you to send and receive messages in Real Time
+                                </ListItem>
+                            </List>
+                            <Text fontWeight='500' fontSize='md'>Executed in 6 days with a team of 4</Text>
+                        </Flex>
+                    </Box>
+
+
 
 
 
@@ -84,7 +132,7 @@ function Project(props) {
 
                         <Flex direction='column' gap='15px' py='20px'>
                             <Text fontWeight='500' fontSize='2xl'>Kindmeal Web Colne
-                                <Link target='_blank' href='https://github.com/TheShenron/numberless-silk-6009'> <Icon as={FaExternalLinkSquareAlt} position='relative' top='3px' /> </Link>
+                                <Link target='_blank' href='https://63b30c5c8592e6134049e604--kind-meals.netlify.app/'> <Icon as={FaExternalLinkSquareAlt} position='relative' top='3px' /> </Link>
                                 <Link target='_blank' href='https://github.com/TheShenron/numberless-silk-6009'> <Icon as={FaGithub} position='relative' top='3px' /> </Link>   </Text>
                             <Text fontSize=''>KindMeal.my is Malaysia's leading meat-free lifestyle platform</Text>
                             <Text fontWeight='500' fontSize='xl'>Features:</Text>
@@ -188,7 +236,7 @@ function Project(props) {
 
 
                     {/* Milap clone */}
-                    <Box w={['100%', '100%', '50%']} p={['5px', '30px 20px']}>
+                    {/* <Box w={['100%', '100%', '50%']} p={['5px', '30px 20px']}>
 
                         <Box overflow='hidden'>
                             <Image src={milap} w={['100%', '95%']} />
@@ -229,7 +277,7 @@ function Project(props) {
                             <Text fontWeight='500' fontSize='md'>Executed in 4 days (solo project)</Text>
                         </Flex>
                     </Box>
-
+ */}
 
 
                 </Flex>
