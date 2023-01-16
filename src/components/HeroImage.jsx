@@ -22,7 +22,7 @@ function HeroImage(props) {
                         <Flex gap='10px' mt='25px'>
                             <Link _hover={{textDecoration:'none' , color:"#ef6817"}} href='https://www.linkedin.com/in/claverprogrammer/' target='_blank'> <Icon as={FaLinkedin} fontSize={['3xl' ,'3xl']} /> </Link>
                             <Link _hover={{textDecoration:'none' , color:"#ef6817"}} href='https://github.com/TheShenron' target='_blank'> <Icon as={FaGithub} fontSize={['3xl' ,'3xl']} /> </Link>
-                            <Link _hover={{textDecoration:'none' , color:"#ef6817"}} href='https://drive.google.com/file/d/1DLwxuGQnKojzSAOcjgqF0TqZsZAG4R0M/view?usp=sharing' target='_blank'> <Flex gap='2' alignItems='center'> <Icon as={FaFilePdf} fontSize={['3xl' ,'3xl']} /> Resume</Flex> </Link>
+                            <Link _hover={{textDecoration:'none' , color:"#ef6817"}} href='https://drive.google.com/file/d/1-pTDoBmFM9OcunT1j2XUr56sqmhh0SAP/view?usp=sharing' target='_blank'> <Flex gap='2' alignItems='center'> <Icon as={FaFilePdf} fontSize={['3xl' ,'3xl']} /> Resume</Flex> </Link>
                         </Flex>
                     </Box>
 

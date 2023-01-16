@@ -25,7 +25,7 @@ function AboutMe(props) {
                 <Box w={['100%' , '100%' , '70%']} px={['5px', '10px', '15px']} >
                     <Text fontWeight='400' lineHeight={[ '28px' ,'30px']}>
                         <Highlight query={['JavaScript', 'TypeScript', "HTML", 'CSS', 'REAct js', 'Nodejs', 'Expressjs', 'MongoDB']} styles={{ px: '1', py: '1', bg: 'orange.100', borderRadius: "3px" }}>
-                            Strong in design and integration with intuitive problem-solving skills. Passionate about implementing and launching new projects. Ability to translate business requirements into technical solutions. Self- motivated and hardworking fresher seeking for an opportunity
+                        An Aspiring Full Stack Web Developer. Passionate about implementing and launching new projects. Ability to translate business requirements into technical solutions. Self- motivated and hardworking fresher seeking for an opportunity
 
                             My specialties include quickly learning new skills and programming languages, problem-solving, responsive design principles, and website optimization, So far I have JavaScript, TypeScript, HTML, CSS, React js, Nodejs, Expressjs, MongoDB, and Git/GitHub under my belt.
 

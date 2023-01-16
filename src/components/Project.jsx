@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Flex, Heading, Icon, Image, Link, List, ListIcon, ListItem, Text } from '@chakra-ui/react';
+import { border, Box, Flex, Heading, Icon, Image, Link, List, ListIcon, ListItem, Text } from '@chakra-ui/react';
 import { BsDot } from 'react-icons/bs'
 import { FaExternalLinkSquareAlt } from 'react-icons/fa'
 import { FaGithub } from 'react-icons/fa'
@@ -22,7 +22,7 @@ function Project(props) {
                 </Flex>
 
 
-                <Flex my={['20px']} flexWrap='wrap' flexDirection={['column', 'column', 'row']}>
+                <Flex my={['20px']} flexWrap='wrap' flexDirection={['column', 'column', 'row']} gap={['15px' , 0]}>
 
 
                     {/* Library Management sysytem project */}
@@ -74,15 +74,15 @@ function Project(props) {
                     {/* chatty app */}
 
 
-                    <Box w={['100%', '100%', '50%']} p={['5px', '30px 20px']}>
+                    <Box w={['100%', '100%', '50%']} p={['5px', '30px 20px']} shadow={['sm' , 'md']}>
 
                         <Box overflow='hidden'>
                             <Image src={chatapp} w={['100%', '95%']} />
                         </Box>
 
                         <Flex direction='column' gap='15px' py='20px'>
-                            <Text fontWeight='500' fontSize='2xl'>Real time Chat-App
-                                <Link href='https://clever-snickerdoodle-7f7cc4.netlify.app' target='_blank'> <Icon as={FaExternalLinkSquareAlt} position='relative' top='3px' /> </Link>
+                            <Text fontWeight='500' fontSize='2xl' textDecoration={'underline'}>Real time Chat-App
+                                <Link href='https://clever-snickerdoodle-7f7cc4.netlify.app' target='_blank'> <Icon as={FaExternalLinkSquareAlt} position='relative' top='3px' color={'blue.300'}/> </Link>
                                 <Link target='_blank' href='https://github.com/TheShenron/Squad-IV'> <Icon as={FaGithub} position='relative' top='3px' /> </Link>   </Text>
                             <Text fontSize=''>This app allows you to communicate with your Friends & Family. It
                                 enables you to send and receive messages real time ....</Text>
@@ -124,15 +124,15 @@ function Project(props) {
                     {/* Kind Meal project */}
 
 
-                    <Box w={['100%', '100%', '50%']} p={['5px', '30px 20px']}>
+                    <Box w={['100%', '100%', '50%']} p={['5px', '30px 20px']} shadow={['sm' , 'md']}>
 
                         <Box overflow='hidden'>
                             <Image src={kindMeal} w={['100%', '95%']} />
                         </Box>
 
                         <Flex direction='column' gap='15px' py='20px'>
-                            <Text fontWeight='500' fontSize='2xl'>Kindmeal Web Colne
-                                <Link target='_blank' href='https://63b30c5c8592e6134049e604--kind-meals.netlify.app/'> <Icon as={FaExternalLinkSquareAlt} position='relative' top='3px' /> </Link>
+                            <Text fontWeight='500' fontSize='2xl' textDecoration={'underline'}>Kindmeal Web Colne
+                                <Link target='_blank' href='https://63b30c5c8592e6134049e604--kind-meals.netlify.app/'> <Icon as={FaExternalLinkSquareAlt} position='relative' top='3px' color={'blue.300'}/> </Link>
                                 <Link target='_blank' href='https://github.com/TheShenron/numberless-silk-6009'> <Icon as={FaGithub} position='relative' top='3px' /> </Link>   </Text>
                             <Text fontSize=''>KindMeal.my is Malaysia's leading meat-free lifestyle platform</Text>
                             <Text fontWeight='500' fontSize='xl'>Features:</Text>
@@ -166,17 +166,18 @@ function Project(props) {
 
                     {/* Kick stater project */}
 
-                    <Box w={['100%', '100%', '50%']} p={['5px', '30px 20px']}>
+                    <Box w={['100%', '100%', '50%']} p={['5px', '30px 20px']} shadow={['sm' , 'md']}>
 
                         <Box overflow='hidden'>
                             <Image src={kickstater} w={['100%', '95%']} />
                         </Box>
 
                         <Flex direction='column' gap='15px' py='20px'>
-                            <Text fontWeight='500' fontSize='2xl'>kickstarter Clone
-                                <Link href='https://kickstarter-clone-def219.netlify.app/' target='_blank'> <Icon as={FaExternalLinkSquareAlt} position='relative' top='3px' /> </Link>
-                                <Link target='_blank' href='https://github.com/TheShenron/overconfident-door-5197'> <Icon as={FaGithub} position='relative' top='3px' /> </Link>   </Text>
-                            <Text fontSize=''>Itʼs where creators share new visions for creative work with the communities that will come together to fund them.</Text>
+                            <Text fontWeight='500' fontSize='2xl' textDecoration={'underline'}>Landing-Page
+                                <Link href='https://deluxe-praline-ba3280.netlify.app/' target='_blank'> <Icon as={FaExternalLinkSquareAlt} position='relative' top='3px' color={'blue.300'}/> </Link>
+                                <Link target='_blank' href='https://github.com/TheShenron/product-landing-page'> <Icon as={FaGithub} position='relative' top='3px' /> </Link>   </Text>
+                            <Text fontSize=''>Product landing page is a post-click page created specifically to
+                                convince a visitor to convert on a product-related offer</Text>
                             <Text fontWeight='500' fontSize='xl'>Features:</Text>
                             <List spacing={1}>
                                 <ListItem>
@@ -185,29 +186,29 @@ function Project(props) {
                                 </ListItem>
                                 <ListItem>
                                     <ListIcon as={BsDot} />
-                                    Form validation
+                                    Drawer
                                 </ListItem>
                                 <ListItem>
                                     <ListIcon as={BsDot} />
                                     Responsiveness UI
                                 </ListItem>
                             </List>
-                            <Text fontWeight='500' fontSize='xl'>Tech stack: HTML | CSS | JS</Text>
-                            <Text fontWeight='500' fontSize='md'>Executed in 4 days (solo project)</Text>
+                            <Text fontWeight='500' fontSize='xl'>Tech stack: ReactJS | CSS</Text>
+                            <Text fontWeight='500' fontSize='md'>Executed in 2 days (solo project)</Text>
                         </Flex>
                     </Box>
 
 
                     {/* MyNetDiary project */}
-                    <Box w={['100%', '100%', '50%']} p={['5px', '30px 20px']}>
+                    <Box w={['100%', '100%', '50%']} p={['5px', '30px 20px']} shadow={['sm' , 'md']}>
 
                         <Box overflow='hidden'>
                             <Image src={mynet} w={['100%', '95%']} />
                         </Box>
 
                         <Flex direction='column' gap='15px' py='20px'>
-                            <Text fontWeight='500' fontSize='2xl'>MyNetDiary Clone
-                                <Link href='https://jazzy-scone-de755c.netlify.app/' target='_blank'> <Icon as={FaExternalLinkSquareAlt} position='relative' top='3px' /> </Link>
+                            <Text fontWeight='500' fontSize='2xl' textDecoration={'underline'}>MyNetDiary Clone
+                                <Link href='https://jazzy-scone-de755c.netlify.app/' target='_blank'> <Icon as={FaExternalLinkSquareAlt} position='relative' top='3px' color={'blue.300'}/> </Link>
                                 <Link target='_blank' href='https://github.com/TheShenron/unusual-bath-4203'> <Icon as={FaGithub} position='relative' top='3px' /> </Link>   </Text>
                             <Text fontSize=''>MyNetDiary guides your weight loss journey with accurate calorie counting, weight loss forecasting and personalized daily insights. :)</Text>
                             <Text fontWeight='500' fontSize='xl'>Features:</Text>
