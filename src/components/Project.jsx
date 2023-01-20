@@ -22,7 +22,7 @@ function Project(props) {
                 </Flex>
 
 
-                <Flex my={['20px']} flexWrap='wrap' flexDirection={['column', 'column', 'row']} gap={['15px' , 0]}>
+                <Flex my={['20px']} flexWrap='wrap' justifyContent={'space-evenly'} flexDirection={['column', 'column', 'row']} gap={['15px']}>
 
 
                     {/* Library Management sysytem project */}
@@ -74,7 +74,7 @@ function Project(props) {
                     {/* chatty app */}
 
 
-                    <Box w={['100%', '100%', '50%']} p={['5px', '30px 20px']} shadow={['sm' , 'md']}>
+                    <Box w={['100%', '100%', '48%']} p={['5px', '30px 20px']} border='1px' borderColor={'gray.100'} borderRadius={'5px'}>
 
                         <Box overflow='hidden'>
                             <Image src={chatapp} w={['100%', '95%']} />
@@ -124,7 +124,7 @@ function Project(props) {
                     {/* Kind Meal project */}
 
 
-                    <Box w={['100%', '100%', '50%']} p={['5px', '30px 20px']} shadow={['sm' , 'md']}>
+                    <Box w={['100%', '100%', '48%']} p={['5px', '30px 20px']}  border='1px' borderColor={'gray.100'} borderRadius={'5px'}>
 
                         <Box overflow='hidden'>
                             <Image src={kindMeal} w={['100%', '95%']} />
@@ -166,7 +166,7 @@ function Project(props) {
 
                     {/* Kick stater project */}
 
-                    <Box w={['100%', '100%', '50%']} p={['5px', '30px 20px']} shadow={['sm' , 'md']}>
+                    <Box w={['100%', '100%', '48%']} p={['5px', '30px 20px']} border='1px' borderColor={'gray.100'} borderRadius={'5px'}>
 
                         <Box overflow='hidden'>
                             <Image src={kickstater} w={['100%', '95%']} />
@@ -200,7 +200,7 @@ function Project(props) {
 
 
                     {/* MyNetDiary project */}
-                    <Box w={['100%', '100%', '50%']} p={['5px', '30px 20px']} shadow={['sm' , 'md']}>
+                    <Box w={['100%', '100%', '48%']} p={['5px', '30px 20px']} border='1px' borderColor={'gray.100'} borderRadius={'5px'}>
 
                         <Box overflow='hidden'>
                             <Image src={mynet} w={['100%', '95%']} />
