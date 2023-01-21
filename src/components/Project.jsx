@@ -17,8 +17,8 @@ function Project(props) {
         <>
             <Box width={['95%', '90%']} m='auto' my='20px' mb='80px' id='Projects'>
 
-                <Flex align='center' justifyContent='space-between' borderBottom='1px' borderTop='1px' borderColor='gray.100'>
-                    <Heading py={['10px']} fontWeight='5400'>Featured Projects:</Heading>
+                <Flex align='center' justifyContent='space-between' borderBottom='1px' borderTop='1px' borderColor='gray.100' backgroundColor={'blue.100'}>
+                    <Heading py={['10px']} px='10px' fontWeight='5400'>Featured Projects:</Heading>
                 </Flex>
 
 

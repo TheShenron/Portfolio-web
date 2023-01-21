@@ -15,8 +15,8 @@ import github from "../img/github.png"
 function TechnicalSkills(props) {
     return (
         <Box width={['95%', '90%']} m='auto' my={['20px' , '50px']} id='Skills' >
-            <Flex align='center' justifyContent='space-between' borderBottom='1px' borderTop='1px' borderColor='gray.100'>
-                <Heading py={['10px']} fontWeight='400'>Technical Skills:</Heading>
+            <Flex align='center' justifyContent='space-between' borderBottom='1px' borderTop='1px' borderColor='gray.100' backgroundColor={'blue.100'}>
+                <Heading py={['10px']} px='10px' fontWeight='400'>Technical Skills:</Heading>
             </Flex>
             <Flex py={['20px', '30px']} justifyContent='space-evenly' flexWrap='wrap' gap=''>
 

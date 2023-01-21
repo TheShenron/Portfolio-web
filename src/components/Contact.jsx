@@ -12,8 +12,8 @@ function Contact(props) {
         <>
             <Box width={['95%', '90%']} m='auto' my='20px' mb='80px' id='Contact'>
 
-                <Flex align='center' justifyContent='space-between' borderBottom='1px' borderTop='1px' borderColor='gray.100' mb='30px'>
-                    <Heading py={['10px']} fontWeight='400'>Contact Me:</Heading>
+                <Flex align='center' justifyContent='space-between' borderBottom='1px' borderTop='1px' borderColor='gray.100' mb='30px' backgroundColor={'blue.100'}>
+                    <Heading py={['10px']} px='10px' fontWeight='400'>Contact Me:</Heading>
                 </Flex>
 
                 <Flex alignItems='center' gap='10px' my='10px' _hover={{textDecor:"none" , color:"#ef6817"}}>

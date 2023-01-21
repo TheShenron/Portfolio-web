@@ -12,7 +12,7 @@ function SizeExample() {
   return (
     <>
 
-      <Icon as={FaHamburger} fontSize='2xl' onClick={() => onOpen()} />
+      <Icon as={FaHamburger} color='blue.300' fontSize='2xl' onClick={() => onOpen()} />
 
       <Drawer onClose={onClose} isOpen={isOpen} size={'xs'}>
         <DrawerOverlay />
