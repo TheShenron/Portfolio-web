@@ -28,7 +28,7 @@ export function About() {
           </p>
         </div>
 
-        <div className="grid grid-cols-3 gap-3">
+        <div className="grid grid-cols-2 gap-3 md:grid-cols-3">
           {stats.map(({ icon: Icon, value, label, sub }) => (
             <Card key={label} className="p-4">
               <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-accent-bg text-accent-ink">
