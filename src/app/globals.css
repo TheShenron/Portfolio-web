@@ -1,0 +1,149 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+/* Class-based dark mode, toggled by ThemeToggle adding/removing `.dark` on
+   <html> — not a plain `@media` variant. Defaults to dark until the user
+   taps the toggle to explicitly switch to light, then the choice persists
+   (same convention as the Uzzy design system this palette is modeled on). */
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --background: #f8fafc;
+  --surface: #ffffff;
+  --surface-2: #f1f5f9;
+  --foreground: #0f172a;
+  --subtle: #64748b;
+  --faint: #94a3b8;
+  --border: #e2e8f0;
+
+  /* Single-accent brand teal, matching the Uzzy design system's approved
+     palette — --accent is teal-500, --accent-hover is teal-600. */
+  --accent: #14b8a6;
+  --accent-hover: #0d9488;
+  --accent-ink: #0f766e;
+  --accent-soft: #ccfbf1;
+
+  --radius: 0.75rem;
+  --card: var(--surface);
+  --card-foreground: var(--foreground);
+  --popover: var(--surface);
+  --popover-foreground: var(--foreground);
+  --primary: var(--accent);
+  --primary-foreground: #ffffff;
+  --secondary: var(--surface-2);
+  --secondary-foreground: var(--foreground);
+  --muted: var(--surface-2);
+  --muted-foreground: var(--subtle);
+  --accent-bg: var(--accent-soft);
+  --accent-foreground: var(--accent-ink);
+  --destructive: #ef4444;
+  --input: var(--border);
+  --ring: var(--accent);
+}
+
+/* Dark palette copied exactly from q-uzzy's :root.dark (globals.css) —
+   shadcn's own neutral/zinc dark scale (true near-black, no blue tint),
+   not a guessed navy scale. Theme is never driven by prefers-color-scheme
+   — the boot script (theme-init.ts) applies `.dark` by default and
+   ThemeToggle sets it explicitly from then on, so only a plain class
+   override is needed. */
+:root.dark {
+  --background: #09090b;
+  --surface: #18181b;
+  --surface-2: #27272a;
+  --foreground: #fafafa;
+  --subtle: #a1a1aa;
+  --faint: #71717a;
+  --border: #27272a;
+
+  --accent: #2dd4bf;
+  --accent-hover: #5eead4;
+  --accent-ink: #99f6e4;
+  --accent-soft: #134e4a;
+
+  --card: var(--surface);
+  --card-foreground: var(--foreground);
+  --popover: var(--surface);
+  --popover-foreground: var(--foreground);
+  --primary: var(--accent);
+  --primary-foreground: #0b1220;
+  --secondary: var(--surface-2);
+  --secondary-foreground: var(--foreground);
+  --muted: var(--surface-2);
+  --muted-foreground: var(--subtle);
+  --accent-bg: var(--accent-soft);
+  /* Not copied from q-uzzy's --accent-foreground (#0b1220) — that token
+     there colors text on a *solid* accent-filled surface (same role as
+     --primary-foreground above). Here --accent-foreground colors text on
+     the soft accent-tinted background (--accent-bg, badges/headings), a
+     different case that needs the light --accent-ink, not near-black. */
+  --accent-foreground: var(--accent-ink);
+  --destructive: #f87171;
+  --input: var(--border);
+  --ring: var(--accent);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-subtle: var(--subtle);
+  --color-faint: var(--faint);
+  --color-border: var(--border);
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-accent-ink: var(--accent-ink);
+  --color-accent-soft: var(--accent-soft);
+
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent-bg: var(--accent-bg);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --font-sans: var(--font-plus-jakarta-sans), ui-sans-serif, system-ui, sans-serif;
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+* {
+  border-color: var(--border);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
